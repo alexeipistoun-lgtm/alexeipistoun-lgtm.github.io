@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fallout Power Fist project by Alexei Pistoun: a pneumatic wearable mechanism built through welding, 3D printing, testing, and iterative redesign.">
 <title>Fallout Power Fist | Alexei Pistoun</title>
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+
+<body class="powerfist-page">
 
 <nav>
     <a class="nav-name" href="index.html">ALEXEI PISTOUN</a>
@@ -19,69 +21,146 @@
     </div>
 </nav>
 
-<header class="project-detail-hero">
+<header class="project-detail-hero pf-header">
     <div class="eyebrow">Pneumatics · Welding · 3D Printing · Iterative Design</div>
     <h1>Fallout Power Fist</h1>
-    <p>A real-life wearable mechanism inspired by the Power Fist from Fallout, built around two pneumatic cylinders and a welded and 3D-printed frame.</p>
+    <p>
+        A Fallout-inspired wearable pneumatic mechanism built around two cylinders,
+        a welded frame, and 3D-printed components, then revised repeatedly through testing.
+    </p>
 </header>
 
-<main class="project-detail">
+<main class="project-detail pf-page">
     <a class="back-link" href="projects.html">← Back to all projects</a>
 
-    <div class="hero-photo">
-        <img src="power-fist-cover.jpg" alt="Power Fist worn on arm">
-    </div>
-
-    <div class="photo-cluster">
-        <figure><img src="power-fist-cad.jpg" alt="Power Fist CAD concept"><figcaption>Early CAD concept</figcaption></figure>
-        <figure><img src="power-fist-early-fabrication.jpg" alt="Early fabricated Power Fist"><figcaption>Fabricated frame and pneumatic cylinders</figcaption></figure>
-        <figure><img src="power-fist-pneumatics.jpg" alt="Power Fist pneumatic components"><figcaption>Later pneumatic and valve layout</figcaption></figure>
-        <figure><img src="power-fist-weld-failure.jpg" alt="Power Fist weld failure"><figcaption>Failure during testing drove another redesign</figcaption></figure>
-    </div>
-
-    <div class="project-detail-grid">
-        <div>
-            <h2>Project Overview</h2>
-            <p>I built the Power Fist as a real-life interpretation of the wearable weapon from Fallout. The mechanism used two pneumatic cylinders mounted to a welded frame with 3D-printed components forming parts of the wearable structure.</p>
-            <p>The project went through several revisions. During testing, the mechanism was hard on its own structure and welds failed more than once. I later added springs to damp the motion and continued modifying the frame before finishing and painting a later version.</p>
-
-            <h3>Engineering Story</h3>
-            <ul>
-                <li>Started with a CAD concept for the wearable frame.</li>
-                <li>Fabricated and welded the structural frame.</li>
-                <li>Integrated two pneumatic cylinders, tubing, valves, and electrical connections.</li>
-                <li>Used 3D-printed parts as part of the wearable structure and enclosure geometry.</li>
-                <li>Observed structural failures during testing and redesigned the mechanism.</li>
-                <li>Added springs in a later revision to reduce the impact the mechanism placed on itself.</li>
-            </ul>
-
-            <h3>Tools &amp; Processes</h3>
-            <p>CAD · Welding · Pneumatics · 3D Printing · Mechanical Fabrication · Prototype Testing · Iterative Design</p>
+    <section class="pf-intro">
+        <div class="pf-cover-card">
+            <img src="power-fist-cover.jpg" alt="Fallout Power Fist worn on arm">
         </div>
 
-        <aside class="project-sidebar">
-            <h3>Project Snapshot</h3>
-            <div class="project-fact"><strong>Project Type</strong>Personal mechanical build</div>
-            <div class="project-fact"><strong>Actuation</strong>Two pneumatic cylinders</div>
-            <div class="project-fact"><strong>Structure</strong>Welded + 3D-printed components</div>
-            <div class="project-fact"><strong>Key Lesson</strong>Failure-driven redesign and damping</div>
-        </aside>
-    </div>
+        <div class="pf-overview-card">
+            <div class="section-label">Project Overview</div>
+            <h2>From concept to a working wearable prototype.</h2>
+            <p>
+                I built the Power Fist as a real-life interpretation of the device from
+                <em>Fallout</em>. The mechanism used two pneumatic cylinders mounted to a
+                welded frame, with 3D-printed components forming part of the wearable structure.
+            </p>
+            <p>
+                Testing exposed structural weaknesses, including repeated weld failures.
+                I used those failures to drive later revisions, including adding springs
+                to reduce the shock the mechanism placed on itself.
+            </p>
 
-    <h2 class="gallery-heading">Build &amp; Iteration Gallery</h2>
-    <div class="gallery-grid">
-        <figure><img src="power-fist-bench.jpg" alt="Power Fist on fabrication bench"><figcaption>Prototype during fabrication</figcaption></figure>
-        <figure><img src="power-fist-pneumatics.jpg" alt="Power Fist pneumatics"><figcaption>Pneumatic layout on a later revision</figcaption></figure>
-        <figure><img src="power-fist-weld-failure.jpg" alt="Weld failure"><figcaption>Structural failure documented during testing</figcaption></figure>
-    </div>
+            <div class="pf-facts">
+                <div class="pf-fact">
+                    <span>Actuation</span>
+                    <strong>2 pneumatic cylinders</strong>
+                </div>
+                <div class="pf-fact">
+                    <span>Fabrication</span>
+                    <strong>Welding + 3D printing</strong>
+                </div>
+                <div class="pf-fact">
+                    <span>Development</span>
+                    <strong>Multiple revisions</strong>
+                </div>
+                <div class="pf-fact">
+                    <span>Focus</span>
+                    <strong>Failure-driven redesign</strong>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="video-block">
-        <h3>Testing Video</h3>
-        <video controls preload="metadata">
-            <source src="power-fist-test.mp4" type="video/mp4">
-        </video>
-        <div class="small-note">Test package: one of the Power Fist videos is included here for layout testing.</div>
-    </div>
+    <section class="pf-section">
+        <div class="pf-section-heading">
+            <div class="section-label">Design & Fabrication</div>
+            <h2>Building the mechanism</h2>
+            <p>
+                The project progressed from an early CAD concept into a fabricated pneumatic
+                assembly, with the layout becoming cleaner as the design evolved.
+            </p>
+        </div>
+
+        <div class="pf-gallery">
+            <figure class="pf-media pf-landscape">
+                <img src="power-fist-cad.jpg" alt="Early Power Fist CAD concept">
+                <figcaption>
+                    <strong>Early CAD concept</strong>
+                    <span>Initial wearable frame geometry.</span>
+                </figcaption>
+            </figure>
+
+            <figure class="pf-media pf-portrait">
+                <img src="power-fist-early-fabrication.jpg" alt="Early fabricated Power Fist frame">
+                <figcaption>
+                    <strong>Fabricated prototype</strong>
+                    <span>Welded frame with the two pneumatic cylinders installed.</span>
+                </figcaption>
+            </figure>
+
+            <figure class="pf-media pf-landscape">
+                <img src="power-fist-pneumatics.jpg" alt="Later pneumatic layout of the Power Fist">
+                <figcaption>
+                    <strong>Later pneumatic layout</strong>
+                    <span>Valve, tubing, wiring, and a more refined frame arrangement.</span>
+                </figcaption>
+            </figure>
+
+            <figure class="pf-media pf-portrait">
+                <img src="power-fist-weld-failure.jpg" alt="Power Fist weld failure during testing">
+                <figcaption>
+                    <strong>Failure during testing</strong>
+                    <span>Repeated weld failures became a major driver for redesign.</span>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="pf-section pf-story-section">
+        <div class="pf-story-copy">
+            <div class="section-label">Iteration</div>
+            <h2>What changed after testing</h2>
+            <ul class="pf-story-list">
+                <li>Started with a CAD concept for the wearable frame.</li>
+                <li>Fabricated and welded the structural assembly.</li>
+                <li>Integrated cylinders, pneumatic tubing, valves, and electrical connections.</li>
+                <li>Documented structural failures instead of treating them as the end of the project.</li>
+                <li>Added springs in a later revision to reduce impact loading on the structure.</li>
+                <li>Continued refining the frame and eventually finished and painted a later version.</li>
+            </ul>
+
+            <div class="pf-tools">
+                <span>CAD</span>
+                <span>Welding</span>
+                <span>Pneumatics</span>
+                <span>3D Printing</span>
+                <span>Mechanical Fabrication</span>
+                <span>Prototype Testing</span>
+            </div>
+        </div>
+
+        <figure class="pf-bench-card">
+            <img src="power-fist-bench.jpg" alt="Power Fist prototype on fabrication bench">
+            <figcaption>Prototype during the build and test process.</figcaption>
+        </figure>
+    </section>
+
+    <section class="pf-section pf-video-section">
+        <div class="pf-section-heading">
+            <div class="section-label">Testing</div>
+            <h2>Prototype in motion</h2>
+            <p>A short clip from testing the mechanism.</p>
+        </div>
+
+        <div class="pf-video-wrap">
+            <video controls preload="metadata" playsinline poster="power-fist-video-poster.jpg">
+                <source src="power-fist-test.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </section>
 </main>
 
 <footer>© 2026 Alexei Pistoun · Engineering Portfolio</footer>

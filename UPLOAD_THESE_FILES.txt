@@ -1,0 +1,16 @@
+UPLOAD THESE FILES TO THE ROOT OF YOUR GITHUB REPOSITORY
+
+Replace:
+- fallout-power-fist.html
+- styles.css
+- all power-fist-*.jpg files
+- power-fist-test.mp4
+
+Add:
+- power-fist-video-poster.jpg
+
+Nothing else on the site needs to be replaced for this test.
+
+After committing, wait about a minute for GitHub Pages to deploy and then use
+Ctrl + Shift + R on:
+https://alexeipistoun.com/fallout-power-fist.html

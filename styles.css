@@ -528,3 +528,307 @@ footer {
     }
     .photo-cluster figure:first-child { grid-column: auto; }
 }
+
+
+/* =========================================================
+   FALLOUT POWER FIST — POLISHED PROJECT PAGE
+   ========================================================= */
+
+.powerfist-page .pf-header {
+    padding-top: 72px;
+    padding-bottom: 58px;
+}
+
+.powerfist-page .pf-header h1 {
+    max-width: 900px;
+}
+
+.powerfist-page .pf-page {
+    max-width: 1180px;
+    padding-top: 48px;
+}
+
+.powerfist-page .pf-intro {
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(320px, 0.8fr) minmax(0, 1.2fr);
+    gap: 34px;
+    align-items: stretch;
+}
+
+.powerfist-page .pf-cover-card {
+    background: #e7e7e3;
+    border-radius: 12px;
+    overflow: hidden;
+    min-height: 560px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+}
+
+.powerfist-page .pf-cover-card img {
+    width: 100%;
+    height: 100%;
+    min-height: 560px;
+    object-fit: cover;
+    object-position: 50% 46%;
+    display: block;
+}
+
+.powerfist-page .pf-overview-card {
+    background: white;
+    border: 1px solid #deded9;
+    border-top: 4px solid #500000;
+    border-radius: 12px;
+    padding: 38px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.045);
+}
+
+.powerfist-page .pf-overview-card h2 {
+    font-size: 35px;
+    line-height: 1.12;
+    margin-bottom: 20px;
+}
+
+.powerfist-page .pf-overview-card p {
+    color: #555;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.powerfist-page .pf-facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.powerfist-page .pf-fact {
+    background: #f2f2ef;
+    border-radius: 7px;
+    padding: 15px 16px;
+}
+
+.powerfist-page .pf-fact span {
+    display: block;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.powerfist-page .pf-fact strong {
+    display: block;
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+.powerfist-page .pf-section {
+    padding: 0;
+    margin-top: 82px;
+}
+
+.powerfist-page .pf-section-heading {
+    max-width: 760px;
+    margin-bottom: 30px;
+}
+
+.powerfist-page .pf-section-heading h2,
+.powerfist-page .pf-story-copy h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.powerfist-page .pf-section-heading p {
+    color: #666;
+    font-size: 17px;
+}
+
+.powerfist-page .pf-gallery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 18px;
+}
+
+.powerfist-page .pf-media {
+    margin: 0;
+    background: white;
+    border: 1px solid #deded9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.045);
+}
+
+.powerfist-page .pf-media.pf-landscape {
+    grid-column: span 7;
+}
+
+.powerfist-page .pf-media.pf-portrait {
+    grid-column: span 5;
+}
+
+.powerfist-page .pf-media img {
+    display: block;
+    width: 100%;
+    background: #e8e8e5;
+}
+
+.powerfist-page .pf-media.pf-landscape img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.powerfist-page .pf-media.pf-portrait img {
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    padding: 12px;
+}
+
+.powerfist-page .pf-media figcaption {
+    position: static;
+    background: white;
+    color: #555;
+    padding: 15px 17px 17px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.powerfist-page .pf-media figcaption strong {
+    color: #202020;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.powerfist-page .pf-media figcaption span {
+    color: #686868;
+}
+
+.powerfist-page .pf-story-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+    gap: 42px;
+    align-items: center;
+    background: #ececea;
+    border-radius: 12px;
+    padding: 42px;
+}
+
+.powerfist-page .pf-story-list {
+    padding-left: 22px;
+    margin: 20px 0 26px;
+}
+
+.powerfist-page .pf-story-list li {
+    margin-bottom: 10px;
+    color: #4f4f4f;
+    font-size: 16px;
+}
+
+.powerfist-page .pf-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.powerfist-page .pf-tools span {
+    background: white;
+    border: 1px solid #dadad6;
+    border-radius: 999px;
+    padding: 7px 11px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.powerfist-page .pf-bench-card {
+    margin: 0;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.powerfist-page .pf-bench-card img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: contain;
+    background: #deded9;
+    display: block;
+}
+
+.powerfist-page .pf-bench-card figcaption {
+    padding: 12px 15px 14px;
+    color: #666;
+    font-size: 13px;
+}
+
+.powerfist-page .pf-video-section {
+    margin-bottom: 20px;
+}
+
+.powerfist-page .pf-video-wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+}
+
+.powerfist-page .pf-video-wrap video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: contain;
+    background: #111;
+}
+
+@media(max-width: 900px) {
+    .powerfist-page .pf-intro,
+    .powerfist-page .pf-story-section {
+        grid-template-columns: 1fr;
+    }
+
+    .powerfist-page .pf-cover-card,
+    .powerfist-page .pf-cover-card img {
+        min-height: 0;
+    }
+
+    .powerfist-page .pf-cover-card img {
+        aspect-ratio: 4 / 3;
+        object-fit: contain;
+        background: #e7e7e3;
+    }
+
+    .powerfist-page .pf-media.pf-landscape,
+    .powerfist-page .pf-media.pf-portrait {
+        grid-column: span 6;
+    }
+}
+
+@media(max-width: 650px) {
+    .powerfist-page .pf-overview-card {
+        padding: 26px 22px;
+    }
+
+    .powerfist-page .pf-facts {
+        grid-template-columns: 1fr;
+    }
+
+    .powerfist-page .pf-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .powerfist-page .pf-media.pf-landscape,
+    .powerfist-page .pf-media.pf-portrait {
+        grid-column: auto;
+    }
+
+    .powerfist-page .pf-story-section {
+        padding: 28px 22px;
+    }
+
+    .powerfist-page .pf-section {
+        margin-top: 60px;
+    }
+}
