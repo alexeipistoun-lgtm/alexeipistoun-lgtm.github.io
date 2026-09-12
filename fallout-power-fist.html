@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A Fallout-inspired engineering build for my personal project portfolio.">
-    <title>Fallout Power Fist | Alexei Pistoun</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fallout Power Fist | Alexei Pistoun</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -15,55 +14,77 @@
         <a href="index.html#about">About</a>
         <a href="projects.html">Projects</a>
         <a href="index.html#engineering">Engineering</a>
+        <a href="index.html#entrepreneurship">Entrepreneurship</a>
         <a href="index.html#contact">Contact</a>
     </div>
 </nav>
 
 <header class="project-detail-hero">
-    <div class="eyebrow">Mechanical Design · Fabrication · Prototyping</div>
+    <div class="eyebrow">Pneumatics · Welding · 3D Printing · Iterative Design</div>
     <h1>Fallout Power Fist</h1>
-    <p>A Fallout-inspired engineering build for my personal project portfolio.</p>
+    <p>A real-life wearable mechanism inspired by the Power Fist from Fallout, built around two pneumatic cylinders and a welded and 3D-printed frame.</p>
 </header>
 
 <main class="project-detail">
     <a class="back-link" href="projects.html">← Back to all projects</a>
 
-    <div class="project-hero-media placeholder-media">
-        Add project photos here.
+    <div class="hero-photo">
+        <img src="images/power-fist/power-fist-cover.jpg" alt="Power Fist worn on arm">
+    </div>
+
+    <div class="photo-cluster">
+        <figure><img src="images/power-fist/power-fist-cad.jpg" alt="Power Fist CAD concept"><figcaption>Early CAD concept</figcaption></figure>
+        <figure><img src="images/power-fist/power-fist-early-fabrication.jpg" alt="Early fabricated Power Fist"><figcaption>Fabricated frame and pneumatic cylinders</figcaption></figure>
+        <figure><img src="images/power-fist/power-fist-pneumatics.jpg" alt="Power Fist pneumatic components"><figcaption>Later pneumatic and valve layout</figcaption></figure>
+        <figure><img src="images/power-fist/power-fist-weld-failure.jpg" alt="Power Fist weld failure"><figcaption>Failure during testing drove another redesign</figcaption></figure>
     </div>
 
     <div class="project-detail-grid">
         <div>
             <h2>Project Overview</h2>
-            <p>
-                This page is ready for the full project story. I left the technical details
-                intentionally open so the site does not claim specifications or design details
-                that have not been provided yet.
-            </p>
+            <p>I built the Power Fist as a real-life interpretation of the wearable weapon from Fallout. The mechanism used two pneumatic cylinders mounted to a welded frame with 3D-printed components forming parts of the wearable structure.</p>
+            <p>The project went through several revisions. During testing, the mechanism was hard on its own structure and welds failed more than once. I later added springs to damp the motion and continued modifying the frame before finishing and painting a later version.</p>
 
-            <h3>What to add next</h3>
+            <h3>Engineering Story</h3>
             <ul>
-                <li>Your goal for the project.</li>
-                <li>What you personally designed, built, or tested.</li>
-                <li>Photos, CAD screenshots, and build iterations.</li>
-                <li>Tools, materials, and manufacturing methods you used.</li>
-                <li>The final result and what you learned.</li>
+                <li>Started with a CAD concept for the wearable frame.</li>
+                <li>Fabricated and welded the structural frame.</li>
+                <li>Integrated two pneumatic cylinders, tubing, valves, and electrical connections.</li>
+                <li>Used 3D-printed parts as part of the wearable structure and enclosure geometry.</li>
+                <li>Observed structural failures during testing and redesigned the mechanism.</li>
+                <li>Added springs in a later revision to reduce the impact the mechanism placed on itself.</li>
             </ul>
+
+            <h3>Tools &amp; Processes</h3>
+            <p>CAD · Welding · Pneumatics · 3D Printing · Mechanical Fabrication · Prototype Testing · Iterative Design</p>
         </div>
 
         <aside class="project-sidebar">
             <h3>Project Snapshot</h3>
-            <div class="project-fact">
-                <strong>Status</strong>
-                Details ready to be added
-            </div>
+            <div class="project-fact"><strong>Project Type</strong>Personal mechanical build</div>
+            <div class="project-fact"><strong>Actuation</strong>Two pneumatic cylinders</div>
+            <div class="project-fact"><strong>Structure</strong>Welded + 3D-printed components</div>
+            <div class="project-fact"><strong>Key Lesson</strong>Failure-driven redesign and damping</div>
         </aside>
+    </div>
+
+    <h2 class="gallery-heading">Build &amp; Iteration Gallery</h2>
+    <div class="gallery-grid">
+        <figure><img src="images/power-fist/power-fist-bench.jpg" alt="Power Fist on fabrication bench"><figcaption>Prototype during fabrication</figcaption></figure>
+        <figure><img src="images/power-fist/power-fist-pneumatics.jpg" alt="Power Fist pneumatics"><figcaption>Pneumatic layout on a later revision</figcaption></figure>
+        <figure><img src="images/power-fist/power-fist-weld-failure.jpg" alt="Weld failure"><figcaption>Structural failure documented during testing</figcaption></figure>
+    </div>
+
+    <div class="video-block">
+        <h3>Testing Video</h3>
+        <video controls preload="metadata">
+            <source src="videos/power-fist/power-fist-test.mp4" type="video/mp4">
+        </video>
+        <div class="small-note">Test package: one of the Power Fist videos is included here for layout testing.</div>
     </div>
 </main>
 
-<footer>
-    © 2026 Alexei Pistoun · Engineering Portfolio
-</footer>
+<footer>© 2026 Alexei Pistoun · Engineering Portfolio</footer>
 
 </body>
 </html>
