@@ -1,0 +1,16 @@
+JONES STATE FOREST — ONLY UPLOAD
+
+Upload all files in this folder to the ROOT of your GitHub Pages repository.
+
+This update:
+- uses the clean handwritten microbial-results image
+- updates the project wording to say the sampling tool used PVC and 3D-printed parts
+- keeps the Jones State Forest cover, ArcGIS map, presentation photo, and video
+
+You do NOT need to replace styles.css for this update.
+
+Optional cleanup:
+If your repository still contains the old file:
+jones-state-forest-bacteria-results.jpg
+you can delete it after this update. The page now uses:
+jones-state-forest-bacteria-results.png
