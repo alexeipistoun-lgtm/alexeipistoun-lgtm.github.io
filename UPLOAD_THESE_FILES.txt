@@ -1,21 +1,8 @@
-UPLOAD-READY UPDATE — EVERYTHING ADDED AFTER THE JONES STATE FOREST PACKAGE
-
-This folder contains only the new/changed website files since the Jones State Forest update.
+Upload all files in this folder to the ROOT of your GitHub Pages repository and replace files with the same names.
 
 Changes included:
-- Adds your airplane photo to the About Me section on the homepage.
-- Adds a complete Electromagnetic Arm project page with photos and working video.
-- Adds a complete Early Liquid-Fuel Prototypes project page with photos and two videos.
-- Replaces the old Flamethrower placeholder page/card with the Mosin Not-a-Flamethrower project, photos, and video.
-- Updates Projects and sitemap.
-- Updates styles.css only to display the homepage photo properly.
-
-HOW TO UPLOAD:
-1. Extract this ZIP.
-2. Open the extracted folder.
-3. Select all files INSIDE the folder.
-4. GitHub -> Add file -> Upload files.
-5. Drag the selected files into the root of your repository.
-6. Commit changes.
-
-These files are compressed for web/GitHub use. Do not upload the ZIP itself.
+- Homepage About photo is reduced to a normal portfolio size.
+- Project renamed to “Liquid Fuel Prototype Flamethrowers.”
+- The uploaded video is now the ONLY video on that project page.
+- The old two liquid-fuel video references were removed from the page.
+- The HTML filename stays early-liquid-fuel-prototypes.html so existing links do not break.
