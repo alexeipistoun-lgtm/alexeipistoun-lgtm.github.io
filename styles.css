@@ -1356,3 +1356,79 @@ footer {
         height: 62px;
     }
 }
+
+
+/* =========================================================
+   PROJECT PAGE SPACING — TIGHTER / CLEANER
+   ========================================================= */
+
+/* The global `section` rule adds large padding. Project-detail sections need
+   their own tighter spacing so galleries, text, and videos flow together. */
+.project-detail .project-gallery-viewer,
+.project-detail .project-page-two-col,
+.project-detail .project-video-section,
+.project-detail .pf-section,
+.project-detail .pf-video-section {
+    padding: 0;
+}
+
+/* Gallery -> text */
+.project-detail .project-gallery-viewer {
+    margin-bottom: 28px;
+}
+
+/* Overview/text block */
+.project-detail .project-page-two-col {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Text -> video */
+.project-detail .project-video-section {
+    margin-top: 42px;
+    margin-bottom: 8px;
+}
+
+/* Reduce extra spacing inside the project page overall */
+.project-detail {
+    padding-top: 48px;
+    padding-bottom: 65px;
+}
+
+/* Keep headings from adding unnecessary vertical distance */
+.project-detail .project-video-section > .section-label {
+    margin-bottom: 6px;
+}
+
+.project-detail .project-video-section > h2 {
+    margin-bottom: 10px;
+}
+
+/* Power Fist page-specific spacing */
+.powerfist-page .project-gallery-viewer {
+    margin-bottom: 28px;
+}
+
+.powerfist-page .project-page-two-col {
+    margin-top: 0;
+}
+
+.powerfist-page .project-video-section {
+    margin-top: 42px;
+}
+
+/* Mobile: keep it compact but readable */
+@media(max-width: 760px) {
+    .project-detail {
+        padding-top: 36px;
+        padding-bottom: 50px;
+    }
+
+    .project-detail .project-gallery-viewer {
+        margin-bottom: 22px;
+    }
+
+    .project-detail .project-video-section {
+        margin-top: 32px;
+    }
+}
