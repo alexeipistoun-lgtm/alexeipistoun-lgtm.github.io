@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alexeipistoun.com/sitemap.xml

@@ -8,409 +8,7 @@
 
     <title>Alexei Pistoun | Engineering Portfolio</title>
 
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f7f7f5;
-            color: #202020;
-            line-height: 1.6;
-        }
-
-        a {
-            color: inherit;
-        }
-
-        /* NAVIGATION */
-
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            padding: 18px 7%;
-
-            background: rgba(255,255,255,0.96);
-            border-bottom: 1px solid #e5e5e5;
-        }
-
-        .nav-name {
-            font-size: 19px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            margin-left: 28px;
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        .nav-links a:hover {
-            color: #500000;
-        }
-
-        /* HERO */
-
-        .hero {
-            min-height: 82vh;
-
-            display: flex;
-            align-items: center;
-
-            padding: 80px 10%;
-
-            background: #17191c;
-            color: white;
-        }
-
-        .hero-content {
-            max-width: 900px;
-        }
-
-        .eyebrow {
-            color: #d5b9bf;
-            font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 14px;
-        }
-
-        .hero h1 {
-            font-size: 68px;
-            line-height: 1;
-            margin-bottom: 20px;
-        }
-
-        .hero h2 {
-            font-size: 27px;
-            font-weight: 400;
-            color: #d8d8d8;
-            margin-bottom: 25px;
-        }
-
-        .hero p {
-            max-width: 720px;
-            color: #c5c5c5;
-            font-size: 18px;
-            margin-bottom: 35px;
-        }
-
-        .button {
-            display: inline-block;
-
-            padding: 12px 20px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-
-            background: #500000;
-            color: white;
-
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 700;
-
-            transition: 0.2s;
-        }
-
-        .button:hover {
-            transform: translateY(-2px);
-        }
-
-        .button-outline {
-            background: transparent;
-            border: 1px solid #888;
-        }
-
-        /* GENERAL SECTIONS */
-
-        section {
-            padding: 85px 10%;
-        }
-
-        .section-label {
-            color: #500000;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 700;
-            font-size: 13px;
-            margin-bottom: 7px;
-        }
-
-        section h2 {
-            font-size: 39px;
-            line-height: 1.15;
-            margin-bottom: 20px;
-        }
-
-        .section-intro {
-            max-width: 750px;
-            color: #666;
-            font-size: 17px;
-            margin-bottom: 45px;
-        }
-
-        /* ABOUT */
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1.3fr 0.7fr;
-            gap: 70px;
-            align-items: center;
-        }
-
-        .about-text p {
-            margin-bottom: 18px;
-            font-size: 17px;
-            color: #505050;
-        }
-
-        .about-photo {
-            min-height: 360px;
-            border-radius: 8px;
-
-            background: #deded9;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            text-align: center;
-            padding: 20px;
-            color: #777;
-        }
-
-        /* PROJECTS */
-
-        .projects {
-            background: #ececea;
-        }
-
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 28px;
-        }
-
-        .project-card {
-            background: white;
-            border-radius: 9px;
-            overflow: hidden;
-
-            border: 1px solid #ddddda;
-
-            transition: 0.2s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-        }
-
-        .project-media {
-            height: 230px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #d6d6d1;
-            color: #737373;
-            text-align: center;
-            overflow: hidden;
-            padding: 0;
-        }
-
-        .project-media img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .project-content {
-            padding: 25px;
-        }
-
-        .project-content h3 {
-            font-size: 23px;
-            margin-bottom: 10px;
-        }
-
-        .project-content p {
-            color: #616161;
-            margin-bottom: 18px;
-        }
-
-        .tag {
-            display: inline-block;
-
-            background: #eeeeec;
-
-            padding: 5px 8px;
-            margin: 3px 2px;
-
-            border-radius: 4px;
-
-            font-size: 12px;
-        }
-
-        /* ENGINEERING */
-
-        .engineering-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 22px;
-        }
-
-        .engineering-card {
-            border-top: 3px solid #500000;
-
-            background: white;
-
-            padding: 28px;
-
-            min-height: 180px;
-
-            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
-        }
-
-        .engineering-card h3 {
-            margin-bottom: 12px;
-        }
-
-        .engineering-card p {
-            color: #626262;
-        }
-
-        /* ENTREPRENEURSHIP */
-
-        .entrepreneurship {
-            background: #17191c;
-            color: white;
-        }
-
-        .entrepreneurship .section-label {
-            color: #dbbfc4;
-        }
-
-        .entrepreneurship .section-intro {
-            color: #c8c8c8;
-        }
-
-        .venture-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-        }
-
-        .venture {
-            border: 1px solid #3d3f42;
-            padding: 32px;
-            border-radius: 8px;
-        }
-
-        .venture h3 {
-            font-size: 26px;
-            margin-bottom: 12px;
-        }
-
-        .venture p {
-            color: #c9c9c9;
-            margin-bottom: 18px;
-        }
-
-        .metric {
-            display: inline-block;
-            margin-right: 24px;
-            margin-top: 12px;
-        }
-
-        .metric strong {
-            display: block;
-            font-size: 25px;
-            color: white;
-        }
-
-        .metric span {
-            font-size: 12px;
-            color: #aaa;
-        }
-
-        /* CONTACT */
-
-        .contact {
-            text-align: center;
-        }
-
-        .contact h2 {
-            font-size: 42px;
-        }
-
-        .contact p {
-            color: #666;
-            margin-bottom: 28px;
-        }
-
-        /* FOOTER */
-
-        footer {
-            background: #101113;
-            color: #999;
-
-            padding: 25px;
-
-            text-align: center;
-
-            font-size: 13px;
-        }
-
-        /* MOBILE */
-
-        @media(max-width: 900px) {
-
-            .nav-links {
-                display: none;
-            }
-
-            .hero {
-                padding-left: 7%;
-                padding-right: 7%;
-            }
-
-            .hero h1 {
-                font-size: 47px;
-            }
-
-            .about-grid,
-            .project-grid,
-            .engineering-grid,
-            .venture-grid {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                padding-left: 7%;
-                padding-right: 7%;
-            }
-
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -422,14 +20,14 @@
 
 <nav>
 
-    <div class="nav-name">
+    <a class="nav-name" href="index.html">
         ALEXEI PISTOUN
-    </div>
+    </a>
 
     <div class="nav-links">
 
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="projects.html">Projects</a>
         <a href="#engineering">Engineering</a>
         <a href="#entrepreneurship">Entrepreneurship</a>
         <a href="#contact">Contact</a>
@@ -465,7 +63,7 @@
             and hands-on fabrication.
         </p>
 
-        <a class="button" href="#projects">
+        <a class="button" href="projects.html">
             View My Work
         </a>
 
@@ -559,7 +157,8 @@
 
         <!-- STEAKYBONE -->
 
-        <div class="project-card">
+        <a class="project-card-link" href="steakybone.html">
+<div class="project-card">
 <div class="project-media">
     <img src="DSC_0409.jpg"
          alt="SteakyBone injection molded dog chew">
@@ -585,12 +184,14 @@
             </div>
 
         </div>
+</a>
 
 
 
         <!-- WOOFWATCH -->
 
-        <div class="project-card">
+        <a class="project-card-link" href="woofwatch.html">
+<div class="project-card">
 
             <div class="project-media">
                 <img src="woofwatch%20image.png"
@@ -616,12 +217,14 @@
             </div>
 
         </div>
+</a>
 
 
 
         <!-- INJECTION MOLDING MACHINE -->
 
-        <div class="project-card">
+        <a class="project-card-link" href="injection-molding-machine.html">
+<div class="project-card">
 
             <div class="project-media">
                 Injection molding machine photo/video
@@ -646,8 +249,13 @@
             </div>
 
         </div>
+</a>
 
 
+    </div>
+
+    <div class="projects-actions">
+        <a class="button" href="projects.html">View All Projects</a>
     </div>
 
 </section>
