@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Laser-Engraved Pumpkins | Alexei Pistoun</title>
-<link rel="stylesheet" href="styles.css">
-</head>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laser-Engraved Pumpkins | Alexei Pistoun</title><link rel="stylesheet" href="styles.css"></head>
 <body>
-
 <nav>
     <a class="nav-name" href="index.html">ALEXEI PISTOUN</a>
     <div class="nav-links">
@@ -19,54 +13,103 @@
     </div>
 </nav>
 
-<header class="project-detail-hero">
-    <div class="eyebrow">Laser Engraving · Digital Fabrication · Meercat</div>
-    <h1>Laser-Engraved Pumpkins</h1>
-    <p>A small Halloween 2023 fabrication project using Texas A&amp;M and Reveille graphics engraved directly onto miniature pumpkins.</p>
+<header class="project-detail-hero"><div class="eyebrow">Laser Engraving · Digital Fabrication · Meercat</div>
+<h1>Laser-Engraved Pumpkins</h1>
+<p>A Halloween 2023 fabrication project using Texas A&amp;M and Reveille graphics engraved directly onto miniature pumpkins.</p>
 </header>
-
 <main class="project-detail">
-    <a class="back-link" href="projects.html">← Back to all projects</a>
+<a class="back-link" href="projects.html">← Back to all projects</a>
 
-    <div class="hero-photo">
-        <img src="pumpkins-cover.jpg" alt="Four laser engraved pumpkins">
-    </div>
-
-    <div class="photo-cluster">
-        <figure><img src="pumpkin-tamu-closeup.jpg" alt="Texas A&M laser engraved pumpkin"><figcaption>Close-up of an A&amp;M design</figcaption></figure>
-        <figure><img src="pumpkins-reveille-tamu.jpg" alt="Reveille and Texas A&M pumpkins"><figcaption>Reveille and A&amp;M designs</figcaption></figure>
-        <figure><img src="pumpkin-gift.jpg" alt="Finished pumpkin given to a friend"><figcaption>One of the finished pumpkins given to friends</figcaption></figure>
-        <figure><img src="pumpkins-cover.jpg" alt="Finished pumpkin group"><figcaption>Finished set after engraving</figcaption></figure>
-    </div>
-
-    <div class="project-detail-grid">
-        <div>
-            <h2>Project Overview</h2>
-            <p>For Halloween 2023, I laser-engraved Texas A&amp;M and Reveille graphics onto a group of miniature pumpkins and gave the finished pieces to friends.</p>
-            <p>I used Meercat software to prepare and run the engraving work. This was a small project, but it is a good example of using digital fabrication equipment for a quick idea-to-finished-part build.</p>
-
-            <h3>Tools &amp; Processes</h3>
-            <p>Laser Engraving · Meercat · Digital Fabrication · Graphic Preparation</p>
+    <section class="project-gallery-viewer">
+        <div class="project-gallery-main">
+            <img src="pumpkins-cover.jpg" alt="Four laser engraved Texas A&M and Reveille pumpkins">
         </div>
+        <div class="project-gallery-caption">Finished set of engraved miniature pumpkins.</div>
+        <div class="project-gallery-thumbs">
+            
+            <button class="project-gallery-thumb active" type="button"
+                    data-src="pumpkins-cover.jpg"
+                    data-alt="Four laser engraved Texas A&M and Reveille pumpkins"
+                    data-caption="Finished set of engraved miniature pumpkins.">
+                <img src="pumpkins-cover.jpg" alt="">
+            </button>
+        
+            <button class="project-gallery-thumb" type="button"
+                    data-src="pumpkin-tamu-closeup.jpg"
+                    data-alt="Texas A&M engraved pumpkin"
+                    data-caption="Close-up of a Texas A&M logo engraving.">
+                <img src="pumpkin-tamu-closeup.jpg" alt="">
+            </button>
+        
+            <button class="project-gallery-thumb" type="button"
+                    data-src="pumpkins-reveille-tamu.jpg"
+                    data-alt="Reveille and Texas A&M engraved pumpkins"
+                    data-caption="Reveille and Texas A&M designs after engraving.">
+                <img src="pumpkins-reveille-tamu.jpg" alt="">
+            </button>
+        
+            <button class="project-gallery-thumb" type="button"
+                    data-src="pumpkin-gift.jpg"
+                    data-alt="Finished engraved pumpkin given to a friend"
+                    data-caption="One of the finished pumpkins after it was given to a friend.">
+                <img src="pumpkin-gift.jpg" alt="">
+            </button>
+        
+        </div>
+        <div class="project-gallery-hint">Click any thumbnail to view it larger.</div>
+    </section>
+    
+<section class="project-page-two-col">
+<div class="project-copy-card">
+<div class="section-label">Project Overview</div>
+<h2>A quick digital-fabrication project for Halloween.</h2>
+<p>For Halloween 2023, I laser-engraved Texas A&amp;M and Reveille graphics onto a group of miniature pumpkins and gave the finished pieces to friends.</p>
+<p>I used Meercat software to prepare and run the engraving work.</p>
+<h3>Tools &amp; Processes</h3>
+<p>Laser Engraving · Meercat · Digital Fabrication · Graphic Preparation</p>
+</div>
+<aside class="project-snapshot-card"><h3>Project Snapshot</h3>
+<div class="project-snapshot-row"><strong>Date</strong>Halloween 2023</div>
+<div class="project-snapshot-row"><strong>Process</strong>Laser engraving</div>
+<div class="project-snapshot-row"><strong>Software</strong>Meercat</div>
+<div class="project-snapshot-row"><strong>Designs</strong>Texas A&amp;M + Reveille</div>
+</aside>
+</section>
+<section class="project-video-section"><div class="section-label">Process</div><h2>Engraving video</h2>
+<div class="project-video-wrap"><video controls preload="metadata" playsinline><source src="laser-engraving-process.mp4" type="video/mp4"></video></div>
+</section>
+</main><footer>© 2026 Alexei Pistoun · Engineering Portfolio</footer>
+<script>
+document.querySelectorAll('.project-gallery-viewer').forEach((viewer) => {
+    const main = viewer.querySelector('.project-gallery-main img');
+    const caption = viewer.querySelector('.project-gallery-caption');
+    const thumbs = viewer.querySelectorAll('.project-gallery-thumb');
 
-        <aside class="project-sidebar">
-            <h3>Project Snapshot</h3>
-            <div class="project-fact"><strong>Date</strong>Halloween 2023</div>
-            <div class="project-fact"><strong>Process</strong>Laser engraving</div>
-            <div class="project-fact"><strong>Software</strong>Meercat</div>
-            <div class="project-fact"><strong>Designs</strong>Texas A&amp;M + Reveille</div>
-        </aside>
-    </div>
+    thumbs.forEach((thumb) => {
+        thumb.addEventListener('click', () => {
+            const src = thumb.dataset.src;
+            const alt = thumb.dataset.alt || '';
+            const text = thumb.dataset.caption || '';
 
-    <div class="video-block">
-        <h3>Engraving Process</h3>
-        <video controls preload="metadata">
-            <source src="laser-engraving-process.mp4" type="video/mp4">
-        </video>
-    </div>
-</main>
+            if (!src || main.getAttribute('src') === src) return;
 
-<footer>© 2026 Alexei Pistoun · Engineering Portfolio</footer>
+            main.classList.add('is-changing');
+            const preload = new Image();
+            preload.src = src;
 
-</body>
-</html>
+            const swap = () => {
+                main.src = src;
+                main.alt = alt;
+                caption.textContent = text;
+                thumbs.forEach(t => t.classList.remove('active'));
+                thumb.classList.add('active');
+                requestAnimationFrame(() => main.classList.remove('is-changing'));
+            };
+
+            if (preload.complete) swap();
+            else preload.onload = swap;
+        });
+    });
+});
+</script>
+</body></html>

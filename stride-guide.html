@@ -1,65 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An Aggies Create running-form sensor project that included iterative enclosure design and 3D-printed prototypes.">
-    <title>Stride Guide | Alexei Pistoun</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aggies Create — Stride Guide | Alexei Pistoun</title><link rel="stylesheet" href="styles.css"></head>
 <body>
-
 <nav>
     <a class="nav-name" href="index.html">ALEXEI PISTOUN</a>
     <div class="nav-links">
         <a href="index.html#about">About</a>
         <a href="projects.html">Projects</a>
         <a href="index.html#engineering">Engineering</a>
+        <a href="index.html#entrepreneurship">Entrepreneurship</a>
         <a href="index.html#contact">Contact</a>
     </div>
 </nav>
 
-<header class="project-detail-hero">
-    <div class="eyebrow">Aggies Create · IoT · Prototyping</div>
-    <h1>Stride Guide</h1>
-    <p>An Aggies Create running-form sensor project that included iterative enclosure design and 3D-printed prototypes.</p>
+<header class="project-detail-hero"><div class="eyebrow">Aggies Create · Wearable Sensing · CAD · 3D Printing</div>
+<h1>Aggies Create — Stride Guide</h1>
+<p>A wearable running-analysis concept using accelerometers placed at key points on a runner’s body to collect motion data and support customized feedback on running form.</p>
 </header>
-
 <main class="project-detail">
-    <a class="back-link" href="projects.html">← Back to all projects</a>
+<a class="back-link" href="projects.html">← Back to all projects</a>
 
-    <div class="project-hero-media placeholder-media">Add photos, CAD screenshots, or build images for Stride Guide here.</div>
-
-    <div class="project-detail-grid">
-        <div>
-            <h2>Project Overview</h2>
-            <p>Stride Guide was a student team project aimed at developing an IoT system for running-form feedback. My documented portfolio work includes iterative physical enclosure development for the prototype.</p>
-            
-
-            <h3>What I worked on</h3>
-            <ul>
-                <li>Contributed to development of an IoT running-form sensing concept.</li>
-<li>Designed and iterated three enclosure versions.</li>
-<li>Used 3D printing to rapidly test physical design changes.</li>
-            </ul>
-
-            <h3>Tools & Technologies</h3>
-            <p>3D Printing · Enclosure Design · IoT · Rapid Prototyping</p>
+    <section class="project-gallery-viewer">
+        <div class="project-gallery-main">
+            <img src="strideguide-body-mount-arduino.png" alt="Stride Guide Arduino mounted to wearable strap">
         </div>
+        <div class="project-gallery-caption">Wearable body mount integrating an Arduino board.</div>
+        <div class="project-gallery-thumbs">
+            
+            <button class="project-gallery-thumb active contain" type="button"
+                    data-src="strideguide-body-mount-arduino.png"
+                    data-alt="Stride Guide Arduino mounted to wearable strap"
+                    data-caption="Wearable body mount integrating an Arduino board.">
+                <img src="strideguide-body-mount-arduino.png" alt="">
+            </button>
+        
+            <button class="project-gallery-thumb contain" type="button"
+                    data-src="strideguide-body-mount-small-board.png"
+                    data-alt="Stride Guide smaller sensor board on wearable strap"
+                    data-caption="A smaller electronics mount on the body-worn strap.">
+                <img src="strideguide-body-mount-small-board.png" alt="">
+            </button>
+        
+            <button class="project-gallery-thumb contain" type="button"
+                    data-src="strideguide-prusa-mk3-printer.png"
+                    data-alt="Prusa MK3 i3 used to print Stride Guide mounts"
+                    data-caption="Prusa MK3 i3 used to print the PLA mounts.">
+                <img src="strideguide-prusa-mk3-printer.png" alt="">
+            </button>
+        
+            <button class="project-gallery-thumb contain" type="button"
+                    data-src="strideguide-sensor-hardware-bench.png"
+                    data-alt="Stride Guide sensor hardware on bench"
+                    data-caption="Early sensor hardware setup used during system development.">
+                <img src="strideguide-sensor-hardware-bench.png" alt="">
+            </button>
+        
+            <button class="project-gallery-thumb contain" type="button"
+                    data-src="strideguide-wireless-data-console.png"
+                    data-alt="Stride Guide wireless data console"
+                    data-caption="Wireless sensor data being transmitted to a local machine.">
+                <img src="strideguide-wireless-data-console.png" alt="">
+            </button>
+        
+            <button class="project-gallery-thumb contain" type="button"
+                    data-src="strideguide-data-csv-output.png"
+                    data-alt="Stride Guide CSV data output"
+                    data-caption="Collected sensor data saved into CSV format.">
+                <img src="strideguide-data-csv-output.png" alt="">
+            </button>
+        
+            <button class="project-gallery-thumb contain" type="button"
+                    data-src="strideguide-acceleration-scatter.png"
+                    data-alt="Stride Guide acceleration scatter data"
+                    data-caption="Example acceleration data used by the team during analysis.">
+                <img src="strideguide-acceleration-scatter.png" alt="">
+            </button>
+        
+            <button class="project-gallery-thumb contain" type="button"
+                    data-src="strideguide-acceleration-curve-fit.png"
+                    data-alt="Stride Guide acceleration curve fit"
+                    data-caption="Example curve fitting used to represent periodic stride data.">
+                <img src="strideguide-acceleration-curve-fit.png" alt="">
+            </button>
+        
+        </div>
+        <div class="project-gallery-hint">Click any thumbnail to view it larger.</div>
+    </section>
+    
+<section class="project-page-two-col">
+<div class="project-copy-card">
+<div class="section-label">My Contribution</div>
+<h2>CAD modeling, hardware, and wearable mounts.</h2>
+<p>Stride Guide was developed through Aggies Create as a team project. The system concept used accelerometer data from key points on a runner’s body to approximate stresses and provide customized feedback on running form.</p>
+<p>My documented responsibilities were CAD modeling and hardware. I designed wearable mounts in SolidWorks, prepared prints in PrusaSlicer, and printed PLA parts on a Prusa MK3 i3 at Starforge.</p>
+<h3>What I worked on</h3>
+<ul>
+<li>Designed body-mounted electronics hardware in SolidWorks.</li>
+<li>Developed 3D-printed mounts for the wearable sensor system.</li>
+<li>Prepared parts using PrusaSlicer and printed them in PLA.</li>
+<li>Integrated electronics hardware into strap-mounted assemblies.</li>
+<li>Contributed to the physical implementation as the sensing system evolved.</li>
+</ul>
+<h3>System Context</h3>
+<p>The team reached a stage where an Arduino recorded two accelerometer data streams and sent the data wirelessly to a local server, which saved the information to a CSV file.</p>
+</div>
+<aside class="project-snapshot-card"><h3>Project Snapshot</h3>
+<div class="project-snapshot-row"><strong>Organization</strong>Aggies Create</div>
+<div class="project-snapshot-row"><strong>Period</strong>Spring 2023</div>
+<div class="project-snapshot-row"><strong>My Role</strong>CAD modeling + hardware</div>
+<div class="project-snapshot-row"><strong>CAD</strong>SolidWorks</div>
+<div class="project-snapshot-row"><strong>Fabrication</strong>PLA on Prusa MK3 i3</div>
+</aside>
+</section>
+</main><footer>© 2026 Alexei Pistoun · Engineering Portfolio</footer>
+<script>
+document.querySelectorAll('.project-gallery-viewer').forEach((viewer) => {
+    const main = viewer.querySelector('.project-gallery-main img');
+    const caption = viewer.querySelector('.project-gallery-caption');
+    const thumbs = viewer.querySelectorAll('.project-gallery-thumb');
 
-        <aside class="project-sidebar">
-            <h3>Project Snapshot</h3>
-            <div class="project-fact"><strong>Organization</strong>Aggies Create</div>
-<div class="project-fact"><strong>Period</strong>Jan–May 2023</div>
-<div class="project-fact"><strong>Prototype Work</strong>3 enclosure iterations</div>
-<div class="project-fact"><strong>Focus</strong>IoT running-form sensing</div>
-        </aside>
-    </div>
-</main>
+    thumbs.forEach((thumb) => {
+        thumb.addEventListener('click', () => {
+            const src = thumb.dataset.src;
+            const alt = thumb.dataset.alt || '';
+            const text = thumb.dataset.caption || '';
 
-<footer>
-    © 2026 Alexei Pistoun · Engineering Portfolio
-</footer>
+            if (!src || main.getAttribute('src') === src) return;
 
-</body>
-</html>
+            main.classList.add('is-changing');
+            const preload = new Image();
+            preload.src = src;
+
+            const swap = () => {
+                main.src = src;
+                main.alt = alt;
+                caption.textContent = text;
+                thumbs.forEach(t => t.classList.remove('active'));
+                thumb.classList.add('active');
+                requestAnimationFrame(() => main.classList.remove('is-changing'));
+            };
+
+            if (preload.complete) swap();
+            else preload.onload = swap;
+        });
+    });
+});
+</script>
+</body></html>

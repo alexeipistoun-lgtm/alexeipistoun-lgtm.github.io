@@ -1026,3 +1026,333 @@ footer {
         padding: 26px 22px;
     }
 }
+
+
+/* =========================================================
+   REUSABLE CLICKABLE PROJECT GALLERY
+   ========================================================= */
+
+.project-gallery-viewer {
+    margin: 0 0 54px;
+}
+
+.project-gallery-main {
+    width: 100%;
+    max-width: 980px;
+    height: min(62vw, 610px);
+    min-height: 420px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #e7e7e3;
+    border: 1px solid #d7d7d2;
+    box-shadow: 0 7px 24px rgba(0,0,0,.08);
+}
+
+.project-gallery-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: opacity .16s ease;
+}
+
+.project-gallery-main img.is-changing {
+    opacity: .25;
+}
+
+.project-gallery-caption {
+    max-width: 980px;
+    margin: 13px auto 0;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    min-height: 22px;
+}
+
+.project-gallery-thumbs {
+    max-width: 980px;
+    margin: 18px auto 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.project-gallery-thumb {
+    appearance: none;
+    padding: 0;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #e7e7e3;
+    cursor: pointer;
+    aspect-ratio: 4 / 3;
+    transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease;
+}
+
+.project-gallery-thumb:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(0,0,0,.10);
+}
+
+.project-gallery-thumb.active {
+    border-color: #500000;
+    box-shadow: 0 0 0 1px #500000;
+}
+
+.project-gallery-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-gallery-thumb.contain img {
+    object-fit: contain;
+    padding: 5px;
+    background: #eeeeea;
+}
+
+.project-gallery-hint {
+    margin-top: 8px;
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+}
+
+.project-page-two-col {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr);
+    gap: 42px;
+    align-items: start;
+}
+
+.project-copy-card {
+    background: white;
+    border: 1px solid #deded9;
+    border-radius: 10px;
+    padding: 34px;
+}
+
+.project-copy-card h2 {
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+.project-copy-card h3 {
+    font-size: 22px;
+    margin: 28px 0 10px;
+}
+
+.project-copy-card p,
+.project-copy-card li {
+    color: #505050;
+    font-size: 17px;
+}
+
+.project-copy-card p {
+    margin-bottom: 17px;
+}
+
+.project-copy-card ul {
+    padding-left: 22px;
+}
+
+.project-copy-card li {
+    margin-bottom: 8px;
+}
+
+.project-snapshot-card {
+    background: white;
+    border: 1px solid #deded9;
+    border-top: 3px solid #500000;
+    border-radius: 9px;
+    padding: 25px;
+}
+
+.project-snapshot-card h3 {
+    margin: 0 0 12px;
+    font-size: 18px;
+}
+
+.project-snapshot-row {
+    padding: 14px 0;
+    border-bottom: 1px solid #ececea;
+}
+
+.project-snapshot-row:last-child {
+    border-bottom: none;
+}
+
+.project-snapshot-row strong {
+    display: block;
+    color: #500000;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+}
+
+.project-video-section {
+    margin-top: 68px;
+}
+
+.project-video-wrap {
+    max-width: 820px;
+    margin: 22px auto 0;
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(0,0,0,.12);
+}
+
+.project-video-wrap video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: contain;
+    background: #111;
+}
+
+@media(max-width: 900px) {
+    .project-gallery-thumbs {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-gallery-main {
+        height: min(75vw, 560px);
+        min-height: 330px;
+    }
+
+    .project-page-two-col {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 560px) {
+    .project-gallery-thumbs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-gallery-main {
+        height: 72vw;
+        min-height: 260px;
+    }
+
+    .project-copy-card {
+        padding: 26px 22px;
+    }
+}
+
+
+/* =========================================================
+   POWER FIST — COMPACT CLICKABLE GALLERY
+   ========================================================= */
+
+.powerfist-page .project-gallery-viewer {
+    max-width: 720px;
+    margin: 0 auto 44px;
+}
+
+.powerfist-page .project-gallery-main {
+    width: 100%;
+    max-width: 680px;
+    height: 360px;
+    min-height: 0;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.powerfist-page .project-gallery-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #e7e7e3;
+}
+
+.powerfist-page .project-gallery-caption {
+    max-width: 680px;
+    margin: 9px auto 0;
+    font-size: 13px;
+    min-height: 18px;
+}
+
+.powerfist-page .project-gallery-thumbs {
+    max-width: 680px;
+    margin: 12px auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.powerfist-page .project-gallery-thumb {
+    flex: 0 0 100px;
+    width: 100px;
+    height: 75px;
+    aspect-ratio: auto;
+    border-radius: 7px;
+}
+
+.powerfist-page .project-gallery-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.powerfist-page .project-gallery-thumb.contain img {
+    object-fit: contain;
+    padding: 3px;
+}
+
+.powerfist-page .project-gallery-hint {
+    margin-top: 6px;
+    font-size: 11px;
+}
+
+.powerfist-page .project-page-two-col {
+    margin-top: 10px;
+}
+
+.powerfist-page .project-video-wrap {
+    max-width: 680px;
+}
+
+@media(max-width: 760px) {
+    .powerfist-page .project-gallery-viewer {
+        max-width: 100%;
+    }
+
+    .powerfist-page .project-gallery-main {
+        max-width: 100%;
+        height: 52vw;
+        min-height: 260px;
+        max-height: 360px;
+    }
+
+    .powerfist-page .project-gallery-thumbs {
+        max-width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 5px;
+    }
+
+    .powerfist-page .project-gallery-thumb {
+        flex-basis: 92px;
+        width: 92px;
+        height: 69px;
+    }
+}
+
+@media(max-width: 480px) {
+    .powerfist-page .project-gallery-main {
+        height: 58vw;
+        min-height: 230px;
+    }
+
+    .powerfist-page .project-gallery-thumb {
+        flex-basis: 82px;
+        width: 82px;
+        height: 62px;
+    }
+}
