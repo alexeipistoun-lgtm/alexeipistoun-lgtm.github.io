@@ -1432,3 +1432,119 @@ footer {
         margin-top: 32px;
     }
 }
+
+
+/* =========================================================
+   FINAL PROJECT PAGE SPACING OVERRIDE
+   Force gallery, text, and video sections to sit closer together.
+   ========================================================= */
+
+/* Remove any inherited global section padding inside project pages. */
+.project-detail > section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Gallery -> overview */
+.project-detail > .project-gallery-viewer {
+    margin-top: 0 !important;
+    margin-bottom: 18px !important;
+}
+
+/* Overview block */
+.project-detail > .project-page-two-col {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+}
+
+/* Overview -> video */
+.project-detail > .project-page-two-col + .project-video-section {
+    margin-top: 30px !important;
+}
+
+/* Any video section inside a project page */
+.project-detail > .project-video-section {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Pull the project content together a bit more overall */
+.project-detail {
+    padding-top: 32px !important;
+    padding-bottom: 48px !important;
+}
+
+/* Slightly reduce internal card padding so the text section feels less oversized */
+.project-copy-card {
+    padding: 28px !important;
+}
+
+.project-snapshot-card {
+    padding: 22px !important;
+}
+
+/* Reduce spacing above project video heading/player */
+.project-video-section > .section-label {
+    margin-bottom: 4px !important;
+}
+
+.project-video-section > h2 {
+    margin-bottom: 8px !important;
+}
+
+.project-video-wrap {
+    margin-top: 14px !important;
+}
+
+/* Power Fist keeps its compact gallery sizing */
+.powerfist-page .project-gallery-viewer {
+    margin-bottom: 18px !important;
+}
+
+.powerfist-page .project-page-two-col + .project-video-section {
+    margin-top: 30px !important;
+}
+
+@media (max-width: 760px) {
+    .project-detail > .project-gallery-viewer {
+        margin-bottom: 14px !important;
+    }
+
+    .project-detail > .project-page-two-col + .project-video-section {
+        margin-top: 24px !important;
+    }
+
+    .project-detail {
+        padding-top: 24px !important;
+        padding-bottom: 36px !important;
+    }
+}
+
+
+/* RC Robots — paired testing videos */
+.rc-video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 980px;
+    margin: 14px auto 0;
+}
+
+.rc-video-grid .project-video-wrap {
+    margin-top: 0 !important;
+    max-width: 100%;
+}
+
+.rc-video-caption {
+    margin: 8px 0 0;
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+}
+
+@media(max-width: 760px) {
+    .rc-video-grid {
+        grid-template-columns: 1fr;
+    }
+}
