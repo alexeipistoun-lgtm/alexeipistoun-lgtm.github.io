@@ -1,28 +1,36 @@
-ALEXEI PISTOUN PORTFOLIO — TEST BUILD
+ALEXEI PISTOUN PORTFOLIO — FLAT TEST BUILD
 
-This is a preview/test version of the new site structure.
+This version fixes the broken Power Fist / pumpkin images and videos by putting
+EVERY new media file directly in the repository root. There are no images/ or
+videos/ folders to upload.
 
-WHAT IS WORKING IN THIS TEST:
-- Homepage remains focused on 3 featured projects.
-- Projects now opens a separate Projects page.
-- Main Projects / Team Engineering Projects / Earlier Projects hierarchy.
-- Fallout Power Fist has a full photo-driven project page.
-- Laser-Engraved Pumpkins has a full project page and process video.
-- Power Fist and pumpkin media have already been renamed and linked in the HTML.
-- Custom-domain CNAME is included.
+WHY THE LAST TEST BROKE:
+The HTML uploaded successfully, but the nested media folders were apparently not
+present in the GitHub repository. The browser therefore found the page but not
+the files referenced by paths such as:
+    images/power-fist/power-fist-cover.jpg
+    videos/power-fist/power-fist-test.mp4
 
-IMPORTANT:
-Your existing GitHub repository already contains:
-- DSC_0409.jpg
-- woofwatch image.png
+THIS BUILD INSTEAD USES:
+    power-fist-cover.jpg
+    power-fist-cad.jpg
+    power-fist-test.mp4
+    pumpkins-cover.jpg
+    laser-engraving-process.mp4
+...all directly at the repo root.
 
-Keep those two files in the repo. This package references them but does not replace them.
+UPLOAD TO GITHUB:
+1. Extract this ZIP on your computer.
+2. Open the extracted folder.
+3. Select ALL files inside it.
+4. GitHub repo -> Add file -> Upload files.
+5. Drag all selected files into the upload area.
+6. Let GitHub replace matching HTML/CSS/CNAME files.
+7. Commit the changes.
+8. Keep your existing DSC_0409.jpg and "woofwatch image.png" in the repo.
+9. Wait about 1 minute for GitHub Pages to redeploy, then hard refresh with
+   Ctrl+Shift+R.
 
-FOR A QUICK GITHUB TEST:
-1. Extract this ZIP.
-2. Upload the CONTENTS of the extracted folder to the root of your GitHub Pages repository.
-3. Allow it to replace index.html and the other matching HTML files.
-4. Do not delete DSC_0409.jpg or woofwatch image.png.
-5. Wait for GitHub Pages to redeploy.
+Do NOT upload only the ZIP file itself.
 
-This is intentionally not the final portfolio. More project photos/pages will be added later.
+This is still a test build; we can resume adding projects and media later.
