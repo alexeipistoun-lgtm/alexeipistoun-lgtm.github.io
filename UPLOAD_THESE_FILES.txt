@@ -1,20 +1,21 @@
-UPLOAD THESE FILES TO THE ROOT OF YOUR GITHUB REPOSITORY
+UPLOAD-READY UPDATE — EVERYTHING ADDED AFTER THE JONES STATE FOREST PACKAGE
 
-Replace:
-- fallout-power-fist.html
-- styles.css
+This folder contains only the new/changed website files since the Jones State Forest update.
 
-The image/video files are included too so this package is self-contained:
-- power-fist-cover.jpg
-- power-fist-cad.jpg
-- power-fist-early-fabrication.jpg
-- power-fist-pneumatics.jpg
-- power-fist-weld-failure.jpg
-- power-fist-bench.jpg
-- power-fist-test.mp4
-- power-fist-video-poster.jpg
+Changes included:
+- Adds your airplane photo to the About Me section on the homepage.
+- Adds a complete Electromagnetic Arm project page with photos and working video.
+- Adds a complete Early Liquid-Fuel Prototypes project page with photos and two videos.
+- Replaces the old Flamethrower placeholder page/card with the Mosin Not-a-Flamethrower project, photos, and video.
+- Updates Projects and sitemap.
+- Updates styles.css only to display the homepage photo properly.
 
-After committing, wait for GitHub Pages to deploy and hard-refresh:
-https://alexeipistoun.com/fallout-power-fist.html
+HOW TO UPLOAD:
+1. Extract this ZIP.
+2. Open the extracted folder.
+3. Select all files INSIDE the folder.
+4. GitHub -> Add file -> Upload files.
+5. Drag the selected files into the root of your repository.
+6. Commit changes.
 
-The thumbnails are now clickable. Clicking one swaps it into the large main-image area.
+These files are compressed for web/GitHub use. Do not upload the ZIP itself.
