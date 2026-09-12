@@ -832,3 +832,197 @@ footer {
         margin-top: 60px;
     }
 }
+
+
+/* =========================================================
+   POWER FIST — CLICKABLE IMAGE GALLERY
+   ========================================================= */
+
+.powerfist-page .pf-gallery-viewer {
+    margin-bottom: 48px;
+}
+
+.powerfist-page .pf-main-image-wrap {
+    width: 100%;
+    max-width: 980px;
+    height: min(62vw, 610px);
+    min-height: 420px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #e5e5e1;
+    border: 1px solid #d8d8d3;
+    box-shadow: 0 7px 24px rgba(0,0,0,0.08);
+}
+
+.powerfist-page .pf-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: opacity .16s ease;
+}
+
+.powerfist-page .pf-main-image.is-changing {
+    opacity: .25;
+}
+
+.powerfist-page .pf-main-caption {
+    max-width: 980px;
+    margin: 13px auto 0;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    min-height: 22px;
+}
+
+.powerfist-page .pf-thumbnails {
+    max-width: 980px;
+    margin: 18px auto 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.powerfist-page .pf-thumb {
+    appearance: none;
+    border: 2px solid transparent;
+    background: #e7e7e3;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    aspect-ratio: 4 / 3;
+    transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease;
+}
+
+.powerfist-page .pf-thumb:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(0,0,0,.10);
+}
+
+.powerfist-page .pf-thumb.active {
+    border-color: #500000;
+    box-shadow: 0 0 0 1px #500000;
+}
+
+.powerfist-page .pf-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.powerfist-page .pf-thumb[data-fit="contain"] img {
+    object-fit: contain;
+    padding: 5px;
+    background: #ecece8;
+}
+
+.powerfist-page .pf-gallery-hint {
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.powerfist-page .pf-overview-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr);
+    gap: 42px;
+    align-items: start;
+}
+
+.powerfist-page .pf-overview-copy {
+    background: white;
+    border: 1px solid #deded9;
+    border-radius: 10px;
+    padding: 34px;
+}
+
+.powerfist-page .pf-overview-copy h2 {
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+.powerfist-page .pf-overview-copy p {
+    color: #555;
+    font-size: 17px;
+    margin-bottom: 17px;
+}
+
+.powerfist-page .pf-overview-copy h3 {
+    margin-top: 28px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.powerfist-page .pf-overview-copy ul {
+    padding-left: 22px;
+}
+
+.powerfist-page .pf-overview-copy li {
+    color: #505050;
+    margin-bottom: 8px;
+}
+
+.powerfist-page .pf-snapshot {
+    background: white;
+    border: 1px solid #deded9;
+    border-top: 3px solid #500000;
+    border-radius: 9px;
+    padding: 25px;
+}
+
+.powerfist-page .pf-snapshot h3 {
+    margin: 0 0 12px;
+    font-size: 18px;
+}
+
+.powerfist-page .pf-snapshot-row {
+    padding: 14px 0;
+    border-bottom: 1px solid #ececea;
+}
+
+.powerfist-page .pf-snapshot-row:last-child {
+    border-bottom: none;
+}
+
+.powerfist-page .pf-snapshot-row strong {
+    display: block;
+    color: #500000;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+}
+
+@media(max-width: 900px) {
+    .powerfist-page .pf-thumbnails {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .powerfist-page .pf-main-image-wrap {
+        height: min(75vw, 560px);
+        min-height: 330px;
+    }
+
+    .powerfist-page .pf-overview-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 560px) {
+    .powerfist-page .pf-thumbnails {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .powerfist-page .pf-main-image-wrap {
+        height: 72vw;
+        min-height: 260px;
+    }
+
+    .powerfist-page .pf-overview-copy {
+        padding: 26px 22px;
+    }
+}

@@ -33,104 +33,101 @@
 <main class="project-detail pf-page">
     <a class="back-link" href="projects.html">← Back to all projects</a>
 
-    <section class="pf-intro">
-        <div class="pf-cover-card">
-            <img src="power-fist-cover.jpg" alt="Fallout Power Fist worn on arm">
+    <section class="pf-gallery-viewer" aria-label="Power Fist project image gallery">
+        <div class="pf-main-image-wrap">
+            <img
+                id="pfMainImage"
+                class="pf-main-image"
+                src="power-fist-cover.jpg"
+                alt="Fallout Power Fist worn on arm">
         </div>
 
-        <div class="pf-overview-card">
+        <div id="pfMainCaption" class="pf-main-caption">
+            Finished Power Fist worn on the arm.
+        </div>
+
+        <div class="pf-thumbnails">
+            <button class="pf-thumb active"
+                    type="button"
+                    data-src="power-fist-cover.jpg"
+                    data-alt="Fallout Power Fist worn on arm"
+                    data-caption="Finished Power Fist worn on the arm.">
+                <img src="power-fist-cover.jpg" alt="">
+            </button>
+
+            <button class="pf-thumb"
+                    type="button"
+                    data-src="power-fist-cad.jpg"
+                    data-alt="Early Power Fist CAD concept"
+                    data-caption="Early CAD concept for the wearable frame."
+                    data-fit="contain">
+                <img src="power-fist-cad.jpg" alt="">
+            </button>
+
+            <button class="pf-thumb"
+                    type="button"
+                    data-src="power-fist-early-fabrication.jpg"
+                    data-alt="Early fabricated Power Fist frame with pneumatic cylinders"
+                    data-caption="Fabricated frame with the two pneumatic cylinders installed.">
+                <img src="power-fist-early-fabrication.jpg" alt="">
+            </button>
+
+            <button class="pf-thumb"
+                    type="button"
+                    data-src="power-fist-pneumatics.jpg"
+                    data-alt="Later Power Fist pneumatic and valve layout"
+                    data-caption="Later pneumatic and valve layout with tubing and wiring.">
+                <img src="power-fist-pneumatics.jpg" alt="">
+            </button>
+
+            <button class="pf-thumb"
+                    type="button"
+                    data-src="power-fist-weld-failure.jpg"
+                    data-alt="Power Fist weld failure during testing"
+                    data-caption="A weld failure documented during testing that drove another redesign.">
+                <img src="power-fist-weld-failure.jpg" alt="">
+            </button>
+
+            <button class="pf-thumb"
+                    type="button"
+                    data-src="power-fist-bench.jpg"
+                    data-alt="Power Fist prototype during fabrication"
+                    data-caption="Prototype during fabrication and testing.">
+                <img src="power-fist-bench.jpg" alt="">
+            </button>
+        </div>
+
+        <div class="pf-gallery-hint">Click any thumbnail to view it larger.</div>
+    </section>
+
+    <section class="pf-overview-layout">
+        <div class="pf-overview-copy">
             <div class="section-label">Project Overview</div>
             <h2>From concept to a working wearable prototype.</h2>
+
             <p>
                 I built the Power Fist as a real-life interpretation of the device from
                 <em>Fallout</em>. The mechanism used two pneumatic cylinders mounted to a
                 welded frame, with 3D-printed components forming part of the wearable structure.
             </p>
+
             <p>
                 Testing exposed structural weaknesses, including repeated weld failures.
                 I used those failures to drive later revisions, including adding springs
                 to reduce the shock the mechanism placed on itself.
             </p>
 
-            <div class="pf-facts">
-                <div class="pf-fact">
-                    <span>Actuation</span>
-                    <strong>2 pneumatic cylinders</strong>
-                </div>
-                <div class="pf-fact">
-                    <span>Fabrication</span>
-                    <strong>Welding + 3D printing</strong>
-                </div>
-                <div class="pf-fact">
-                    <span>Development</span>
-                    <strong>Multiple revisions</strong>
-                </div>
-                <div class="pf-fact">
-                    <span>Focus</span>
-                    <strong>Failure-driven redesign</strong>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="pf-section">
-        <div class="pf-section-heading">
-            <div class="section-label">Design & Fabrication</div>
-            <h2>Building the mechanism</h2>
-            <p>
-                The project progressed from an early CAD concept into a fabricated pneumatic
-                assembly, with the layout becoming cleaner as the design evolved.
-            </p>
-        </div>
-
-        <div class="pf-gallery">
-            <figure class="pf-media pf-landscape">
-                <img src="power-fist-cad.jpg" alt="Early Power Fist CAD concept">
-                <figcaption>
-                    <strong>Early CAD concept</strong>
-                    <span>Initial wearable frame geometry.</span>
-                </figcaption>
-            </figure>
-
-            <figure class="pf-media pf-portrait">
-                <img src="power-fist-early-fabrication.jpg" alt="Early fabricated Power Fist frame">
-                <figcaption>
-                    <strong>Fabricated prototype</strong>
-                    <span>Welded frame with the two pneumatic cylinders installed.</span>
-                </figcaption>
-            </figure>
-
-            <figure class="pf-media pf-landscape">
-                <img src="power-fist-pneumatics.jpg" alt="Later pneumatic layout of the Power Fist">
-                <figcaption>
-                    <strong>Later pneumatic layout</strong>
-                    <span>Valve, tubing, wiring, and a more refined frame arrangement.</span>
-                </figcaption>
-            </figure>
-
-            <figure class="pf-media pf-portrait">
-                <img src="power-fist-weld-failure.jpg" alt="Power Fist weld failure during testing">
-                <figcaption>
-                    <strong>Failure during testing</strong>
-                    <span>Repeated weld failures became a major driver for redesign.</span>
-                </figcaption>
-            </figure>
-        </div>
-    </section>
-
-    <section class="pf-section pf-story-section">
-        <div class="pf-story-copy">
-            <div class="section-label">Iteration</div>
-            <h2>What changed after testing</h2>
-            <ul class="pf-story-list">
+            <h3>Engineering Story</h3>
+            <ul>
                 <li>Started with a CAD concept for the wearable frame.</li>
                 <li>Fabricated and welded the structural assembly.</li>
-                <li>Integrated cylinders, pneumatic tubing, valves, and electrical connections.</li>
-                <li>Documented structural failures instead of treating them as the end of the project.</li>
-                <li>Added springs in a later revision to reduce impact loading on the structure.</li>
-                <li>Continued refining the frame and eventually finished and painted a later version.</li>
+                <li>Integrated two pneumatic cylinders, tubing, valves, and electrical connections.</li>
+                <li>Documented structural failures during testing and used them to guide redesign.</li>
+                <li>Added springs in a later revision to reduce impact loading on the mechanism.</li>
+                <li>Continued refining the frame before finishing and painting a later version.</li>
             </ul>
 
+            <h3>Tools &amp; Processes</h3>
             <div class="pf-tools">
                 <span>CAD</span>
                 <span>Welding</span>
@@ -141,10 +138,34 @@
             </div>
         </div>
 
-        <figure class="pf-bench-card">
-            <img src="power-fist-bench.jpg" alt="Power Fist prototype on fabrication bench">
-            <figcaption>Prototype during the build and test process.</figcaption>
-        </figure>
+        <aside class="pf-snapshot">
+            <h3>Project Snapshot</h3>
+
+            <div class="pf-snapshot-row">
+                <strong>Project Type</strong>
+                Personal mechanical build
+            </div>
+
+            <div class="pf-snapshot-row">
+                <strong>Actuation</strong>
+                Two pneumatic cylinders
+            </div>
+
+            <div class="pf-snapshot-row">
+                <strong>Structure</strong>
+                Welded + 3D-printed components
+            </div>
+
+            <div class="pf-snapshot-row">
+                <strong>Development</strong>
+                Multiple revisions
+            </div>
+
+            <div class="pf-snapshot-row">
+                <strong>Key Lesson</strong>
+                Failure-driven redesign and damping
+            </div>
+        </aside>
     </section>
 
     <section class="pf-section pf-video-section">
@@ -164,6 +185,48 @@
 </main>
 
 <footer>© 2026 Alexei Pistoun · Engineering Portfolio</footer>
+
+<script>
+(() => {
+    const mainImage = document.getElementById('pfMainImage');
+    const mainCaption = document.getElementById('pfMainCaption');
+    const thumbs = document.querySelectorAll('.pf-thumb');
+
+    thumbs.forEach((thumb) => {
+        thumb.addEventListener('click', () => {
+            const src = thumb.dataset.src;
+            const alt = thumb.dataset.alt || '';
+            const caption = thumb.dataset.caption || '';
+
+            if (mainImage.getAttribute('src') === src) return;
+
+            mainImage.classList.add('is-changing');
+
+            const preload = new Image();
+            preload.src = src;
+
+            const swapImage = () => {
+                mainImage.src = src;
+                mainImage.alt = alt;
+                mainCaption.textContent = caption;
+
+                thumbs.forEach((item) => item.classList.remove('active'));
+                thumb.classList.add('active');
+
+                requestAnimationFrame(() => {
+                    mainImage.classList.remove('is-changing');
+                });
+            };
+
+            if (preload.complete) {
+                swapImage();
+            } else {
+                preload.onload = swapImage;
+            }
+        });
+    });
+})();
+</script>
 
 </body>
 </html>
