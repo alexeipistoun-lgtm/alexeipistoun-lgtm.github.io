@@ -1,3 +1,12 @@
-UPLOAD ALL FILES IN THIS FOLDER TO THE ROOT OF YOUR GITHUB PAGES REPOSITORY.
+PORTFOLIO THREE-PROJECT FIX
 
-This update replaces the Injection Molding Machine placeholder page, adds the real project media/video, updates its card on Projects, and adds the real cover photo to the homepage featured-project card. Existing drone status wording is preserved in projects.html.
+Upload EVERY file in this folder to the ROOT of your GitHub Pages repository.
+Choose Replace/overwrite for files that already exist.
+
+This update:
+1. Uses the more interesting Injection Molding Machine image on the homepage, projects page, and project page.
+2. Uses the fire/action photo as the Mosin Not-a-Flamethrower cover on the projects page and detail page.
+3. Replaces the old placeholder Hexacopter page with the complete ongoing-project page, including crash status, future rebuild plans, gallery, Jetson photo, and video.
+4. Adds the drone project overview banner at the top of the detail page.
+
+No stylesheet replacement is required.

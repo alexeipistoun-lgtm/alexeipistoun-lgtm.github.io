@@ -1,4 +1,18 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Hexacopter / Jetson Vision Drone | Alexei Pistoun</title><link rel="stylesheet" href="styles.css"></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hexacopter / Jetson Vision Drone | Alexei Pistoun</title>
+<link rel="stylesheet" href="styles.css?v=drone-status-update-1">
+<style>
+.drone-page .project-banner{max-width:980px;margin:0 auto 34px;border-radius:12px;overflow:hidden;border:1px solid #d7d7d2;box-shadow:0 8px 28px rgba(0,0,0,.09)}.drone-page .project-banner img{display:block;width:100%;height:auto}
+/* Page-local sizing so this update works without replacing the global stylesheet. */
+.drone-page .project-gallery-viewer{max-width:760px;margin:0 auto 42px}.drone-page .project-gallery-main{width:100%;max-width:700px;height:390px;min-height:0;margin:0 auto;border-radius:10px;overflow:hidden;background:#e7e7e3;border:1px solid #d7d7d2;box-shadow:0 7px 24px rgba(0,0,0,.08)}.drone-page .project-gallery-main img{width:100%;height:100%;object-fit:contain;display:block;transition:opacity .16s ease}.drone-page .project-gallery-main img.is-changing{opacity:.25}.drone-page .project-gallery-caption{max-width:700px;margin:9px auto 0;text-align:center;color:#666;font-size:13px;min-height:18px}.drone-page .project-gallery-thumbs{max-width:700px;margin:12px auto 0;display:flex;justify-content:center;gap:8px;flex-wrap:wrap}.drone-page .project-gallery-thumb{appearance:none;padding:0;border:2px solid transparent;border-radius:7px;overflow:hidden;background:#e7e7e3;cursor:pointer;width:112px;height:82px;transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease}.drone-page .project-gallery-thumb:hover{transform:translateY(-2px);box-shadow:0 5px 14px rgba(0,0,0,.10)}.drone-page .project-gallery-thumb.active{border-color:#500000;box-shadow:0 0 0 1px #500000}.drone-page .project-gallery-thumb img{width:100%;height:100%;object-fit:cover;display:block}.drone-page .project-gallery-hint{margin-top:6px;text-align:center;color:#888;font-size:11px}.drone-page .project-page-two-col{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:42px;align-items:start}.drone-page .project-copy-card{background:white;border:1px solid #deded9;border-radius:10px;padding:34px}.drone-page .project-copy-card h2{font-size:34px;margin-bottom:18px}.drone-page .project-copy-card h3{font-size:22px;margin:28px 0 10px}.drone-page .project-copy-card p,.drone-page .project-copy-card li{color:#505050;font-size:17px}.drone-page .project-copy-card p{margin-bottom:17px}.drone-page .project-copy-card ul{padding-left:22px}.drone-page .project-copy-card li{margin-bottom:8px}.drone-page .project-snapshot-card{background:white;border:1px solid #deded9;border-top:3px solid #500000;border-radius:9px;padding:25px}.drone-page .project-snapshot-card h3{margin:0 0 12px;font-size:18px}.drone-page .project-snapshot-row{padding:14px 0;border-bottom:1px solid #ececea}.drone-page .project-snapshot-row:last-child{border-bottom:none}.drone-page .project-snapshot-row strong{display:block;color:#500000;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px}.drone-page .project-video-section{margin-top:52px}.drone-page .project-video-wrap{max-width:700px;margin:20px auto 0;background:#111;border-radius:10px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.12)}.drone-page .project-video-wrap video{display:block;width:100%;max-height:430px;height:auto;object-fit:contain;background:#111}.drone-page .project-status-card{max-width:760px;margin:0 auto 34px;background:#fff;border:1px solid #deded9;border-left:4px solid #500000;border-radius:9px;padding:22px 24px}.drone-page .project-status-card strong{display:block;color:#500000;font-size:12px;text-transform:uppercase;letter-spacing:1.2px;margin-bottom:7px}.drone-page .project-status-card p{margin:0;color:#505050;font-size:16px}.drone-page .status-pill{display:inline-block;margin-top:12px;padding:6px 10px;border-radius:999px;background:#ececea;color:#4b4b4b;font-size:12px;font-weight:700}
+@media(max-width:760px){.drone-page .project-gallery-main{height:55vw;min-height:260px;max-height:390px}.drone-page .project-page-two-col{grid-template-columns:1fr}.drone-page .project-copy-card{padding:26px 22px}}
+</style>
+</head>
+<body>
 <nav>
     <a class="nav-name" href="index.html">ALEXEI PISTOUN</a>
     <div class="nav-links">
@@ -9,6 +23,77 @@
         <a href="index.html#contact">Contact</a>
     </div>
 </nav>
-<header class="project-detail-hero"><div class="eyebrow">Robotics · Flight Systems · Computer Vision</div><h1>Hexacopter / Jetson Vision Drone</h1><p>680 mm hexacopter integrating Pixhawk 6, Jetson Orin Nano, and an Intel RealSense depth camera. Manual flight worked; autonomous vision remained experimental.</p></header><main class="project-detail"><a class="back-link" href="projects.html">← Back to all projects</a><div class="hero-photo" style="display:flex;align-items:center;justify-content:center;color:#777;">Photos will be added in the next pass.</div><h2>Project page in progress</h2><p>This is included so you can test the navigation and overall multi-page structure before we finish adding the rest of the project media.</p></main>
+<header class="project-detail-hero">
+    <div class="eyebrow">UAV Integration · Embedded Computing · Computer Vision</div>
+    <h1>Hexacopter / Jetson Vision Drone</h1>
+    <p>An ongoing 680 mm carbon-fiber hexacopter project integrating a Pixhawk 6 flight controller, NVIDIA Jetson Orin Nano, and Intel RealSense depth camera. Manual flight was achieved, but the aircraft later suffered a crash that paused development. I plan to revisit and rebuild the project in the future, including another attempt at the computer-vision and autonomy work.</p>
+</header>
+<main class="project-detail drone-page">
+    <a class="back-link" href="projects.html">← Back to all projects</a>
+
+    <div class="project-banner"><img src="hexacopter-drone-project-banner.png" alt="Hexacopter Jetson Vision Drone project overview"></div>
+
+    <section class="project-gallery-viewer">
+        <div class="project-gallery-main"><img src="hexacopter-drone-cover.jpg" alt="680 mm carbon-fiber hexacopter during assembly"></div>
+        <div class="project-gallery-caption">680 mm carbon-fiber hexacopter during hardware integration.</div>
+        <div class="project-gallery-thumbs">
+            <button class="project-gallery-thumb active" type="button" data-src="hexacopter-drone-cover.jpg" data-alt="680 mm carbon-fiber hexacopter during assembly" data-caption="680 mm carbon-fiber hexacopter during hardware integration."><img src="hexacopter-drone-cover.jpg" alt=""></button>
+            <button class="project-gallery-thumb" type="button" data-src="hexacopter-drone-electronics.jpg" data-alt="Hexacopter electronics and onboard hardware" data-caption="Onboard electronics, power distribution, flight hardware, and custom mounting during integration."><img src="hexacopter-drone-electronics.jpg" alt=""></button>
+            <button class="project-gallery-thumb" type="button" data-src="hexacopter-drone-jetson-orin-nano.jpg" data-alt="NVIDIA Jetson Orin Nano used for the drone project" data-caption="NVIDIA Jetson Orin Nano used as the onboard computer for computer-vision experiments."><img src="hexacopter-drone-jetson-orin-nano.jpg" alt=""></button>
+        </div>
+        <div class="project-gallery-hint">Click any thumbnail to view it larger.</div>
+    </section>
+
+    <section class="project-status-card">
+        <strong>Project Status</strong>
+        <p>This project is still a work in progress. After successful manual flight testing, the aircraft suffered a crash that paused this iteration. I plan to revisit the build in the future, rebuild the platform, and continue experimenting with onboard vision and autonomy.</p>
+        <span class="status-pill">Ongoing · Future rebuild planned</span>
+    </section>
+
+    <section class="project-page-two-col">
+        <div class="project-copy-card">
+            <div class="section-label">Project Overview</div>
+            <h2>Building a large hexacopter around onboard vision hardware.</h2>
+            <p>I built this 680 mm carbon-fiber hexacopter as a platform for experimenting with onboard computing and computer vision. The aircraft combined a Pixhawk 6 flight controller with an NVIDIA Jetson Orin Nano and an Intel RealSense depth camera.</p>
+            <p>The mechanical and electrical integration required mounting the flight hardware, routing power and signal wiring, packaging the battery and onboard computer, and developing custom 3D-printed mounts for the added hardware.</p>
+            <p>The aircraft was successfully flown manually. I also experimented with Python and OpenCV on the Jetson for computer-vision and autonomy work, but I did not reach a working autonomous-flight implementation before the aircraft suffered a crash. The project is therefore unfinished rather than complete, and I plan to return to it in a future rebuild.</p>
+            <h3>What I worked on</h3>
+            <ul>
+                <li>Assembled and integrated the 680 mm carbon-fiber hexacopter platform.</li>
+                <li>Integrated the Pixhawk 6 flight controller and supporting electronics.</li>
+                <li>Added an NVIDIA Jetson Orin Nano for onboard computing.</li>
+                <li>Integrated an Intel RealSense depth camera and custom mounting hardware.</li>
+                <li>Experimented with Python and OpenCV for onboard computer vision.</li>
+                <li>Completed successful manual flight testing before a crash paused the project and ended this iteration.</li>
+            </ul>
+            <h3>Future work</h3>
+            <p>I plan to revisit the project with a rebuilt airframe, refine the onboard hardware integration, and continue the Jetson/RealSense computer-vision work. The next iteration will build on what I learned from the first flight-capable version and the crash that ended it.</p>
+        </div>
+        <aside class="project-snapshot-card">
+            <h3>Project Snapshot</h3>
+            <div class="project-snapshot-row"><strong>Airframe</strong>680 mm carbon-fiber hexacopter</div>
+            <div class="project-snapshot-row"><strong>Flight Controller</strong>Pixhawk 6</div>
+            <div class="project-snapshot-row"><strong>Onboard Computer</strong>NVIDIA Jetson Orin Nano</div>
+            <div class="project-snapshot-row"><strong>Vision Sensor</strong>Intel RealSense depth camera</div>
+            <div class="project-snapshot-row"><strong>Software</strong>Python · OpenCV</div>
+            <div class="project-snapshot-row"><strong>Result</strong>Manual flight achieved; autonomy unfinished</div>
+            <div class="project-snapshot-row"><strong>Status</strong>Ongoing — paused after crash; future rebuild planned</div>
+        </aside>
+    </section>
+
+    <section class="project-video-section">
+        <div class="section-label">Flight / Testing</div>
+        <h2>Project demonstration</h2>
+        <div class="project-video-wrap">
+            <video controls playsinline preload="metadata" poster="hexacopter-drone-video-poster.jpg">
+                <source src="hexacopter-drone-demo.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+</main>
 <footer>© 2026 Alexei Pistoun · Engineering Portfolio</footer>
-</body></html>
+<script>
+document.querySelectorAll('.project-gallery-viewer').forEach((viewer)=>{const main=viewer.querySelector('.project-gallery-main img');const caption=viewer.querySelector('.project-gallery-caption');const thumbs=viewer.querySelectorAll('.project-gallery-thumb');thumbs.forEach((thumb)=>thumb.addEventListener('click',()=>{const src=thumb.dataset.src;if(!src||main.getAttribute('src')===src)return;main.classList.add('is-changing');const p=new Image();p.src=src;const swap=()=>{main.src=src;main.alt=thumb.dataset.alt||'';caption.textContent=thumb.dataset.caption||'';thumbs.forEach(t=>t.classList.remove('active'));thumb.classList.add('active');requestAnimationFrame(()=>main.classList.remove('is-changing'));};if(p.complete)swap();else p.onload=swap;}));});
+</script>
+</body>
+</html>
