@@ -1,8 +1,3 @@
-Upload all files in this folder to the ROOT of your GitHub Pages repository and replace files with the same names.
+UPLOAD ALL FILES IN THIS FOLDER TO THE ROOT OF YOUR GITHUB PAGES REPOSITORY.
 
-Changes included:
-- Homepage About photo is reduced to a normal portfolio size.
-- Project renamed to “Liquid Fuel Prototype Flamethrowers.”
-- The uploaded video is now the ONLY video on that project page.
-- The old two liquid-fuel video references were removed from the page.
-- The HTML filename stays early-liquid-fuel-prototypes.html so existing links do not break.
+This update replaces the Injection Molding Machine placeholder page, adds the real project media/video, updates its card on Projects, and adds the real cover photo to the homepage featured-project card. Existing drone status wording is preserved in projects.html.
