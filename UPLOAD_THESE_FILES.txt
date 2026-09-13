@@ -1,16 +1,8 @@
-DRONE PAGE — COMBINED FIX
+WOOFWATCH TEAM PROJECTS UPDATE
 
-Upload every file in this folder to the ROOT of your GitHub repository and replace matching files.
+Upload projects.html to the ROOT of your GitHub repository and replace the existing file.
 
-This update:
-- removes the extra duplicate drone image above the gallery
-- keeps the compact clickable gallery as the first visual on the page
-- uses only your real drone / electronics / Jetson photos
-- includes the NEW flight/testing video you uploaded
-- removes the old video from the page
-- includes cache-busting so the changes should show immediately
-
-Optional cleanup from GitHub after uploading:
-- hexacopter-drone-demo.mp4
-- hexacopter-drone-video-poster.jpg
-- hexacopter-drone-project-banner.png
+Change made:
+- Added WoofWatch to the Team Engineering Projects / Collaborative work section.
+- Kept the same compact card style.
+- Clicking the card goes to the existing woofwatch.html page used by the featured project card.
