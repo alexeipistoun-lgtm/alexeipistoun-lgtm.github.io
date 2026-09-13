@@ -1,29 +1,26 @@
-PORTFOLIO MULTI-PAGE UPDATE
+HEXACOPTER / JETSON VISION DRONE — UPDATED ASSET PACK
 
-Upload these files to the ROOT of your GitHub Pages repository.
+Recommended title:
+Hexacopter / Jetson Vision Drone
 
-The Projects page now contains these 8 projects:
-1. SteakyBone
-2. WoofWatch
-3. Injection Molding Machine
-4. Stride Guide
-5. Saratoga Homes Hydrogen Storage
-6. Hexacopter & Onboard Vision
-7. Fallout Power Fist
-8. Flamethrower
+Recommended placement:
+Main Projects
 
-The homepage still shows 3 featured projects.
-Each project card opens its own detail page.
+Recommended cover:
+hexacopter-drone-cover.jpg
 
-Keep your existing:
-- DSC_0409.jpg
-- woofwatch image.png
-- resume.pdf (once uploaded)
+Supporting media:
+hexacopter-drone-electronics.jpg
+hexacopter-drone-jetson-orin-nano.jpg
+hexacopter-drone-demo.mp4
+hexacopter-drone-video-poster.jpg
 
-If you already uploaded the previous version, you can delete:
-- embedded-systems.html
-- analog-electronics.html
+Suggested project framing:
+A 680 mm carbon-fiber hexacopter integrating a Pixhawk 6 flight controller,
+NVIDIA Jetson Orin Nano, and Intel RealSense depth camera. The aircraft was
+successfully flown manually. Computer-vision/autonomy experiments using
+Python and OpenCV were attempted but did not reach a working autonomous-flight
+implementation.
 
-The Fallout Power Fist and Flamethrower pages intentionally use placeholders until
-you provide the actual project details and photos, so the website does not invent
-technical claims.
+Suggested tags:
+Pixhawk 6 · Jetson Orin Nano · Intel RealSense · Python · OpenCV · 3D Printing · UAV Integration
