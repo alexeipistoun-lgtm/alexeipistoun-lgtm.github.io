@@ -1,14 +1,16 @@
-NO-AI IMAGE UPDATE
+DRONE PAGE — COMBINED FIX
 
 Upload every file in this folder to the ROOT of your GitHub repository and replace matching files.
 
-What changed:
-- Injection Molding Machine now uses your real hands-on assembly photo on the homepage, Projects page, and project page.
-- Hexacopter / Jetson Vision Drone now uses your real drone photo at the top of the project page.
-- The Mosin Not-a-Flamethrower cover remains your original real fire/action photo.
-- No AI-generated images are included in this ZIP.
+This update:
+- removes the extra duplicate drone image above the gallery
+- keeps the compact clickable gallery as the first visual on the page
+- uses only your real drone / electronics / Jetson photos
+- includes the NEW flight/testing video you uploaded
+- removes the old video from the page
+- includes cache-busting so the changes should show immediately
 
-Optional repository cleanup:
-Delete these old generated files from GitHub if you want them gone entirely:
-- injection-molding-machine-featured.png
+Optional cleanup from GitHub after uploading:
+- hexacopter-drone-demo.mp4
+- hexacopter-drone-video-poster.jpg
 - hexacopter-drone-project-banner.png
