@@ -1,12 +1,14 @@
-PORTFOLIO THREE-PROJECT FIX
+NO-AI IMAGE UPDATE
 
-Upload EVERY file in this folder to the ROOT of your GitHub Pages repository.
-Choose Replace/overwrite for files that already exist.
+Upload every file in this folder to the ROOT of your GitHub repository and replace matching files.
 
-This update:
-1. Uses the more interesting Injection Molding Machine image on the homepage, projects page, and project page.
-2. Uses the fire/action photo as the Mosin Not-a-Flamethrower cover on the projects page and detail page.
-3. Replaces the old placeholder Hexacopter page with the complete ongoing-project page, including crash status, future rebuild plans, gallery, Jetson photo, and video.
-4. Adds the drone project overview banner at the top of the detail page.
+What changed:
+- Injection Molding Machine now uses your real hands-on assembly photo on the homepage, Projects page, and project page.
+- Hexacopter / Jetson Vision Drone now uses your real drone photo at the top of the project page.
+- The Mosin Not-a-Flamethrower cover remains your original real fire/action photo.
+- No AI-generated images are included in this ZIP.
 
-No stylesheet replacement is required.
+Optional repository cleanup:
+Delete these old generated files from GitHub if you want them gone entirely:
+- injection-molding-machine-featured.png
+- hexacopter-drone-project-banner.png
