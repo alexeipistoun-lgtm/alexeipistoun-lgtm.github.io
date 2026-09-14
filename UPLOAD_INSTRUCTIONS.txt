@@ -1,4 +1,14 @@
-This package uses the exact image you uploaded for the Jones State Forest microbial results.
-Upload all files in this folder to the root of your GitHub Pages repository, replacing the existing Jones State Forest files.
-The results image filename remains:
-jones-state-forest-bacteria-results.png
+WOOFWATCH + LASER WEBSITE UPDATE
+
+Upload these files to the ROOT of your GitHub Pages repository.
+Do not upload the ZIP itself: extract the batch ZIP, select the files inside, and upload them.
+Replace matching files when GitHub asks.
+
+This update contains:
+- A finished WoofWatch page organized chronologically from V1 through V5.
+- All current WoofWatch photos and videos supplied for V1-V5.
+- A Laser Project page with its photos and video.
+- An updated projects.html that keeps WoofWatch in both Main Projects and Team Engineering Projects and adds Laser Project under Earlier Projects.
+- Only user-supplied project images are used. Video poster frames are extracted from the supplied videos.
+
+Upload the batches in order. All files belong in the repository root.
