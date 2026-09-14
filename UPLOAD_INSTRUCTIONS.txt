@@ -1,14 +1,12 @@
-WOOFWATCH + LASER WEBSITE UPDATE
+PORTFOLIO UPDATE — WATER WHEEL + WINCH PROJECTS
 
-Upload these files to the ROOT of your GitHub Pages repository.
-Do not upload the ZIP itself: extract the batch ZIP, select the files inside, and upload them.
-Replace matching files when GitHub asks.
+Upload every file in this folder directly to the ROOT of your GitHub Pages repository.
+Replace projects.html when GitHub asks.
 
-This update contains:
-- A finished WoofWatch page organized chronologically from V1 through V5.
-- All current WoofWatch photos and videos supplied for V1-V5.
-- A Laser Project page with its photos and video.
-- An updated projects.html that keeps WoofWatch in both Main Projects and Team Engineering Projects and adds Laser Project under Earlier Projects.
-- Only user-supplied project images are used. Video poster frames are extracted from the supplied videos.
+This update:
+- Replaces the 3D-Printed Water-Wheel Generator placeholder with a real cover image and working project link.
+- Adds a full water-wheel project page with a compact clickable gallery.
+- Replaces the Winch / Grappling-Hook Arm placeholder with a real cover image and working project link.
+- Adds a full winch project page with a compact clickable gallery and compressed demo video.
 
-Upload the batches in order. All files belong in the repository root.
+The FRC Elevator placeholder is intentionally unchanged because no FRC Elevator media was available in the files I could find.
