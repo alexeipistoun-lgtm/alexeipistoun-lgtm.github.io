@@ -1,131 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alexei Pistoun | Engineering Portfolio</title>
-<link rel="stylesheet" href="styles.css?v=homepage-photo-liquid-fuel-fix-2">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SteakyBone Launch Planner</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<nav>
-    <a class="nav-name" href="index.html">ALEXEI PISTOUN</a>
-    <div class="nav-links">
-        <a href="index.html#about">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="index.html#engineering">Engineering</a>
-        <a href="index.html#entrepreneurship">Entrepreneurship</a>
-        <a href="index.html#contact">Contact</a>
+  <header class="topbar">
+    <div>
+      <h1>SteakyBone Launch Planner</h1>
+      <p>Editable launch timeline for Amazon, packaging, content, FBA, Vine, and more.</p>
     </div>
-</nav>
-
-<header class="hero">
-    <div class="hero-content">
-        <div class="eyebrow">Engineering Portfolio</div>
-        <h1>Alexei Pistoun</h1>
-        <h2>Mechatronics · Product Development · Manufacturing</h2>
-        <p>I am a Mechatronics Engineering Technology student at Texas A&amp;M focused on designing, building, and manufacturing physical products that combine mechanical systems, electronics, embedded software, and hands-on fabrication.</p>
-        <a class="button" href="projects.html">View My Work</a>
-        <a class="button button-outline" href="resume.pdf" target="_blank">Resume</a>
-        <a class="button button-outline" href="https://www.linkedin.com/in/alexei-pistoun" target="_blank">LinkedIn</a>
+    <div class="topbar-actions">
+      <button id="addTaskBtn" class="primary">+ Add task</button>
+      <button id="exportBtn">Export JSON</button>
+      <label class="button-like" for="importInput">Import JSON</label>
+      <input id="importInput" type="file" accept="application/json" hidden />
+      <button id="resetBtn" class="danger">Reset</button>
     </div>
-</header>
+  </header>
 
-<section id="about">
-    <div class="about-grid">
-        <div class="about-text">
-            <div class="section-label">About Me</div>
-            <h2>I like building things that actually work.</h2>
-            <p>Howdy! I'm Alexei, a Mechatronics Engineering Technology student at Texas A&amp;M University with minors in Embedded Systems Integration and Engineering Entrepreneurship.</p>
-            <p>I am most interested in projects that combine mechanical design, electronics, manufacturing, and software. I enjoy taking an idea from a sketch or CAD model through prototyping, testing, redesign, and eventually a functional physical product.</p>
-            <p>Outside of engineering, I am interested in entrepreneurship, aviation, and developing products of my own.</p>
+  <main class="layout">
+    <section class="panel controls-panel">
+      <div class="control-row">
+        <label>
+          Timeline start
+          <input id="timelineStart" type="date" />
+        </label>
+        <label>
+          Timeline end
+          <input id="timelineEnd" type="date" />
+        </label>
+        <label>
+          Filter
+          <select id="categoryFilter">
+            <option value="all">All categories</option>
+          </select>
+        </label>
+        <label>
+          Search
+          <input id="searchInput" type="search" placeholder="Search tasks..." />
+        </label>
+      </div>
+      <div class="summary" id="summary"></div>
+    </section>
+
+    <section class="panel gantt-panel">
+      <div class="section-heading">
+        <div>
+          <h2>Launch timeline</h2>
+          <p>Click a task bar or row to edit it.</p>
         </div>
-        <div class="about-photo"><img src="alexei-homepage-photo.jpg" alt="Alexei Pistoun standing beside a light aircraft"></div>
-    </div>
-</section>
+      </div>
+      <div id="ganttWrap" class="gantt-wrap"></div>
+    </section>
 
-<section class="projects">
-    <div class="section-label">Selected Work</div>
-    <h2>Featured Projects</h2>
-    <p class="section-intro">A few of the projects that best represent what I am working on now.</p>
-    <div class="project-grid">
-        <a class="project-card-link" href="steakybone.html">
-            <div class="project-card">
-                <div class="project-media"><img src="DSC_0409.jpg" alt="SteakyBone dog chew"></div>
-                <div class="project-content">
-                    <h3>SteakyBone</h3>
-                    <p>Injection-molded consumer product developed from concept through tooling, manufacturing, documentation, and sales.</p>
-                    <span class="tag">SolidWorks</span><span class="tag">CNC</span><span class="tag">Injection Molding</span>
-                </div>
-            </div>
-        </a>
-        <a class="project-card-link" href="woofwatch.html">
-            <div class="project-card">
-                <div class="project-media"><img src="woofwatch%20image.png" alt="WoofWatch smart dog collar"></div>
-                <div class="project-content">
-                    <h3>WoofWatch</h3>
-                    <p>Anti-theft smart dog collar incorporating custom PCBs, embedded electronics, enclosure development, and a locking system.</p>
-                    <span class="tag">Altium</span><span class="tag">PCB Design</span><span class="tag">Embedded Systems</span>
-                </div>
-            </div>
-        </a>
-        <a class="project-card-link" href="injection-molding-machine.html">
-            <div class="project-card">
-                <div class="project-media"><img src="injection-molding-machine-assembly.png?v=no-ai-1" alt="Custom injection molding machine"></div>
-                <div class="project-content">
-                    <h3>Injection Molding Machine</h3>
-                    <p>Custom-built injection molding machine with increased shot capacity and multi-zone PID temperature control.</p>
-                    <span class="tag">Manufacturing</span><span class="tag">PID Control</span><span class="tag">Prototyping</span>
-                </div>
-            </div>
-        </a>
-    </div>
-    <div style="margin-top:34px;"><a class="button" href="projects.html">View All Projects</a></div>
-</section>
-
-<section id="engineering">
-    <div class="section-label">Capabilities</div>
-    <h2>Engineering &amp; Manufacturing</h2>
-    <p class="section-intro">My work spans mechanical design, manufacturing, electronics, embedded systems, and software.</p>
-    <div class="engineering-grid">
-        <div class="engineering-card"><h3>CAD &amp; Mechanical Design</h3><p>SolidWorks · Fusion 360 · Product Design · Enclosure Design · Mold Design</p></div>
-        <div class="engineering-card"><h3>Manufacturing</h3><p>CNC Machining · 3D Printing · Injection Molding · Prototyping · Process Development</p></div>
-        <div class="engineering-card"><h3>Electronics</h3><p>Altium · EasyEDA · PCB Design · Soldering · Electronic Instrumentation</p></div>
-        <div class="engineering-card"><h3>Embedded Systems</h3><p>STM32 · FPGA · Vivado · Quartus · Embedded C/C++</p></div>
-        <div class="engineering-card"><h3>Programming</h3><p>C · C++ · Python · ARM Assembly · MATLAB · Git/GitHub</p></div>
-        <div class="engineering-card"><h3>Product Development</h3><p>Prototyping · Testing · Design Iteration · Documentation · Design for Manufacturing</p></div>
-    </div>
-</section>
-
-<section id="entrepreneurship" class="dark">
-    <div class="section-label">Entrepreneurship</div>
-    <h2>From engineering projects to real products.</h2>
-    <p class="section-intro">I enjoy not only building products, but also understanding how they can be manufactured, sold, and developed into businesses.</p>
-    <div class="venture-grid">
-        <div class="venture">
-            <h3>SteakyBone</h3><p>Founder and product engineer for an injection-molded consumer dog chew manufactured in College Station, Texas.</p>
-            <div class="metric"><strong>4</strong><span>Mold Designs</span></div>
-            <div class="metric"><strong>400+</strong><span>Parts Produced</span></div>
-            <div class="metric"><strong>100+</strong><span>Units Sold</span></div>
+    <section class="panel table-panel">
+      <div class="section-heading">
+        <div>
+          <h2>Task list</h2>
+          <p>Use the status dropdowns to keep the plan current.</p>
         </div>
-        <div class="venture">
-            <h3>WoofWatch</h3><p>Co-founded a student engineering venture developing an anti-theft smart dog collar with custom electronics and a biometric locking system.</p>
-            <div class="metric"><strong>4</strong><span>PCB Designs</span></div>
-            <div class="metric"><strong>8</strong><span>Housing Iterations</span></div>
-            <div class="metric"><strong>1</strong><span>Patent Application</span></div>
-        </div>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>Category</th>
+              <th>Start</th>
+              <th>End</th>
+              <th>Status</th>
+              <th>Owner</th>
+              <th>Notes</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="taskTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="taskDialog">
+    <form id="taskForm" method="dialog">
+      <div class="dialog-head">
+        <h2 id="dialogTitle">Add task</h2>
+        <button type="button" id="closeDialogBtn" class="icon-btn" aria-label="Close">×</button>
+      </div>
+      <input type="hidden" id="taskId" />
+      <div class="form-grid">
+        <label class="wide">
+          Task name
+          <input id="taskName" required maxlength="120" />
+        </label>
+        <label>
+          Category
+          <input id="taskCategory" required list="categoryList" />
+          <datalist id="categoryList"></datalist>
+        </label>
+        <label>
+          Status
+          <select id="taskStatus">
+            <option>Not started</option>
+            <option>In progress</option>
+            <option>Blocked</option>
+            <option>Done</option>
+          </select>
+        </label>
+        <label>
+          Start date
+          <input id="taskStart" type="date" required />
+        </label>
+        <label>
+          End date
+          <input id="taskEnd" type="date" required />
+        </label>
+        <label>
+          Owner
+          <input id="taskOwner" placeholder="Alexei, supplier, Amazon..." />
+        </label>
+        <label>
+          Priority
+          <select id="taskPriority">
+            <option value="high">High</option>
+            <option value="medium" selected>Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </label>
+        <label class="wide">
+          Notes
+          <textarea id="taskNotes" rows="4"></textarea>
+        </label>
+      </div>
+      <div class="dialog-actions">
+        <button type="button" id="deleteTaskBtn" class="danger hidden">Delete</button>
+        <div class="spacer"></div>
+        <button type="button" id="cancelBtn">Cancel</button>
+        <button type="submit" class="primary">Save task</button>
+      </div>
+    </form>
+  </dialog>
+
+  <template id="emptyStateTemplate">
+    <div class="empty-state">
+      <h3>No tasks match this view</h3>
+      <p>Change the filter or add a new task.</p>
     </div>
-</section>
+  </template>
 
-<section id="contact" class="contact">
-    <div class="section-label">Contact</div>
-    <h2>Let's build something.</h2>
-    <p>Feel free to reach out about engineering, projects, product development, or opportunities.</p>
-    <a class="button" href="mailto:Pistoale@Tamu.edu">Email Me</a>
-    <a class="button" href="https://www.linkedin.com/in/alexei-pistoun" target="_blank">LinkedIn</a>
-</section>
-
-<footer>© 2026 Alexei Pistoun · Engineering Portfolio</footer>
-
+  <script src="app.js"></script>
 </body>
 </html>
